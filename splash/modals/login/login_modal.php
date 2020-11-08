@@ -1,0 +1,67 @@
+<!-- Modal -->
+<div class="splashModal modal fade" id="logInTeacherModal" tabindex="-1" role="dialog" aria-labelledby="logInTeacherModalTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Teacher's Login</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="wrapper fadeInDown">
+				  <div id="formContent">
+					<!-- Login Form -->
+					<form action="pages/teacher_dashboard.php">
+					  <input type="text" id="loginUsername" class="splashInput fadeIn second" name="loginUsername" placeholder="login">
+					  <input type="password" id="loginPassword" class="splashInput fadeIn third" name="loginPassword" placeholder="password">
+					  <input type="submit" class="fadeIn fourth" value="Log In">
+					</form>
+
+					<!-- Remind Passowrd -->
+					<div id="formFooter">
+					  <a class="underlineHover" href="#">Forgot Password?</a>
+					</div>
+
+				  </div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="splashModal modal fade" id="logInStudentModal" tabindex="-1" role="dialog" aria-labelledby="logInStudentModalTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Student's Login</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="wrapper fadeInDown">
+				  <div id="formContent">
+					<!-- Login Form -->
+					<form action="pages/student_dashboard.php">
+					  <input type="text" id="loginUsername" class="splashInput fadeIn second" name="loginUsername" placeholder="login">
+					  <input type="password" id="loginPassword" class="splashInput fadeIn third" name="loginPassword" placeholder="password">
+					  <input type="submit" class="fadeIn fourth" value="Log In">
+					</form>
+
+					<!-- Remind Passowrd -->
+					<div id="formFooter">
+					  <a class="underlineHover" href="#">Forgot Password?</a>
+					</div>
+
+				  </div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
