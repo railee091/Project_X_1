@@ -206,16 +206,17 @@
 						<h4 class="ft-text-title">Terms and Conditions</h4>
 						<div class="address-member">
 							<p class="member">
-								<b>go to...</b>
+								<a href="pages/faq_general.php" class="about" data-toggle="modal" data-target="#termsAndConditions">READ</a>
 							</p>
+							<?php require "splash/modals/terms_and_conditions.php"; ?>
 						</div>		
 					</div>		
 					<div class="col-sm-4 col-xs-12 text-center border-left">
 						<h4 class="ft-text-title">FAQS</h4>
 						<div class="pspt-dtls">
-							<a href="#" class="about">General</a>
-							<a href="#" class="team">Teacher</a>
-							<a href="#" class="advertise">Students</a>
+							<a href="pages/faq_general.php" class="about">General</a>
+							<a href="pages/faq_teacher.php" class="team">Teacher</a>
+							<a href="pages/faq_student.php" class="advertise">Students</a>
 						</div>
 					</div>		
 				</div>	
@@ -223,7 +224,7 @@
 					<div class="col-sm-4 text-pp-crt"><!--insert--></div>
 					<div class="col-sm-4 text-pp-crt-rg">cpoyright 2020 All Rights Reserved</div>
 					<div class="col-sm-4 developer">
-						<a href="https://topline-tech.com" target="_blank" class="text-pp-crt"><!--insert--></a>
+						<a href="" target="_blank" class="text-pp-crt"><!--insert--></a>
 					</div>
 				</div>
 			</div>
