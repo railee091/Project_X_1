@@ -13,8 +13,8 @@
 				  <div id="formContent">
 					<!-- Login Form -->
 					<form action="pages/teacher_dashboard.php">
-					  <input type="text" id="loginUsername" class="splashInput fadeIn second" name="loginUsername" placeholder="login">
-					  <input type="password" id="loginPassword" class="splashInput fadeIn third" name="loginPassword" placeholder="password">
+					  <input type="text" id="loginTeacherUsername" class="splashInput fadeIn second" name="loginTeacherUsername" placeholder="login">
+					  <input type="password" id="loginTeacherPassword" class="splashInput fadeIn third" name="loginTeacherPassword" placeholder="password">
 					  <input type="submit" class="fadeIn fourth" value="Log In">
 					</form>
 
@@ -46,8 +46,8 @@
 				  <div id="formContent">
 					<!-- Login Form -->
 					<form action="pages/student_dashboard.php">
-					  <input type="text" id="loginUsername" class="splashInput fadeIn second" name="loginUsername" placeholder="login">
-					  <input type="password" id="loginPassword" class="splashInput fadeIn third" name="loginPassword" placeholder="password">
+					  <input type="text" id="loginStudentUsername" class="splashInput fadeIn second" name="loginStudentUsername" placeholder="login">
+					  <input type="password" id="loginStudentPassword" class="splashInput fadeIn third" name="loginStudentPassword" placeholder="password">
 					  <input type="submit" class="fadeIn fourth" value="Log In">
 					</form>
 
