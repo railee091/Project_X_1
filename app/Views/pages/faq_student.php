@@ -20,7 +20,7 @@
 
 <!-- Bootstrap FAQ - START -->
 <div class="container">
-	<a href="../index.php" class="btn btn-primary">BACK<<</a>
+	<a href="../../../" class="btn btn-primary">BACK<<</a>
     <br />
     <br />
     <br />

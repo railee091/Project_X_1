@@ -31,10 +31,8 @@
 			
         <!-- Page Content Holder -->
         <div id="content">
-
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-
                     <button type="button" id="sidebarCollapse" class="navbar-btn">
                         <span></span>
                         <span></span>
@@ -43,7 +41,6 @@
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item">
@@ -94,9 +91,80 @@
                     </div>
                 </div>
             </nav>
-			<a href="teacher_dashboard.php"><button type="button" class="btn btn-primary">BACK</button></a>
-			<p>//this teacher_profile.php</p>
 			
+			<div class="col-md-9">
+				<a href="teacher_dashboard.php"><button type="button" class="btn btn-primary">BACK</button></a>
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-md-12">
+								<h4>Your Profile</h4>
+								<hr>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<form>
+								  <div class="form-group row">
+									<label for="username" class="col-4 col-form-label">User Name*</label> 
+									<div class="col-8">
+									  <input id="username" name="username" placeholder="Username" class="form-control here" required="required" type="text">
+									</div>
+								  </div>
+								  <div class="form-group row">
+									<label for="name" class="col-4 col-form-label">First Name</label> 
+									<div class="col-8">
+									  <input id="name" name="name" placeholder="First Name" class="form-control here" type="text">
+									</div>
+								  </div>
+								  <div class="form-group row">
+									<label for="lastname" class="col-4 col-form-label">Last Name</label> 
+									<div class="col-8">
+									  <input id="lastname" name="lastname" placeholder="Last Name" class="form-control here" type="text">
+									</div>
+								  </div>
+								  <div class="form-group row">
+									<label for="text" class="col-4 col-form-label">Nick Name*</label> 
+									<div class="col-8">
+									  <input id="text" name="text" placeholder="Nick Name" class="form-control here" required="required" type="text">
+									</div>
+								  </div>
+								  <div class="form-group row">
+									<label for="email" class="col-4 col-form-label">Email*</label> 
+									<div class="col-8">
+									  <input id="email" name="email" placeholder="Email" class="form-control here" required="required" type="text">
+									</div>
+								  </div>
+								  <div class="form-group row">
+									<label for="website" class="col-4 col-form-label">Website</label> 
+									<div class="col-8">
+									  <input id="website" name="website" placeholder="website" class="form-control here" type="text">
+									</div>
+								  </div>
+								  <div class="form-group row">
+									<label for="publicinfo" class="col-4 col-form-label">Public Info</label> 
+									<div class="col-8">
+									  <textarea id="publicinfo" name="publicinfo" cols="40" rows="4" class="form-control"></textarea>
+									</div>
+								  </div>
+								  <div class="form-group row">
+									<label for="newpass" class="col-4 col-form-label">New Password</label> 
+									<div class="col-8">
+									  <input id="newpass" name="newpass" placeholder="New Password" class="form-control here" type="text">
+									</div>
+								  </div> 
+								  <div class="form-group row">
+									<div class="offset-4 col-8">
+									  <button name="submit" type="submit" class="btn btn-primary">Update My Profile</button>
+									</div>
+								  </div>
+								</form>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
         </div>
     </div>
 

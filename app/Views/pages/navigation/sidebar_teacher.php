@@ -46,7 +46,7 @@
 
             <ul class="list-unstyled CTAs">
                 <li>
-                    <a href="../index.php" class="download">LOGOUT</a>
+                    <a href="../../../" class="download">LOGOUT</a>
                 </li>
                 <li>
                     <a href="" class="article">link</a>
