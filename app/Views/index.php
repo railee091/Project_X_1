@@ -7,6 +7,7 @@
 		<!-- Bootstrap core JavaScript -->
 		<script src="app/views/assets/jquery/jquery.min.js"></script> <!--qjeury-->
 		<script src="app/views/assets/bootstrap/js/bootstrap.bundle.min.js"></script> <!--bootsrap js-->
+		<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/font-awesome.min.css" />
 		
 		<!-- main CSS -->
 		<link href="app/views/assets/main.css" rel="stylesheet">
@@ -69,7 +70,7 @@
 				<div class="row">
 					<div class="col-sm">
 						<div class="card" style="width: 18rem;">
-							<img class="card-img-top" src="images/mission_vision/mission.png" alt="Card image cap">
+							<img class="card-img-top" src="app/views/images/mission_vision/mission.png" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">Mission</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -80,7 +81,7 @@
 					
 					<div class="col-sm">
 						<div class="card" style="width: 18rem;">
-							<img class="card-img-top" src="images/mission_vision/vision.png" alt="Card image cap">
+							<img class="card-img-top" src="app/views/images/mission_vision/vision.png" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">Vision</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -91,7 +92,7 @@
 					
 					<div class="col-sm">
 						<div class="card" style="width: 18rem;">
-							<img class="card-img-top" src="images/mission_vision/apply.png" alt="Card image cap">
+							<img class="card-img-top" src="app/views/images/mission_vision/apply.png" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">Be a teacher</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -161,22 +162,22 @@
 							<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1000"><!--slide interval speed 1000 = 1 sec-->
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="images/filler_images/stock_male.png" alt="..." class="bannerImageSplash">
-										<img src="images/filler_images/stock_female.png" alt="..." class="bannerImageSplash">
-										<img src="images/filler_images/stock_male.png" alt="..." class="bannerImageSplash">
-										<img src="images/filler_images/stock_female.png" alt="..." class="bannerImageSplash">
+										<img src="app/views/images/filler_images/stock_male.png" alt="..." class="bannerImageSplash">
+										<img src="app/views/images/filler_images/stock_female.png" alt="..." class="bannerImageSplash">
+										<img src="app/views/images/filler_images/stock_male.png" alt="..." class="bannerImageSplash">
+										<img src="app/views/images/filler_images/stock_female.png" alt="..." class="bannerImageSplash">
 									</div>
 									<div class="carousel-item">
-										<img src="images/filler_images/stock_male.png" alt="..." class="bannerImageSplash">
-										<img src="images/filler_images/stock_female.png" alt="..." class="bannerImageSplash">
-										<img src="images/filler_images/stock_female.png" alt="..." class="bannerImageSplash">
-										<img src="images/filler_images/stock_male.png" alt="..." class="bannerImageSplash">
+										<img src="app/views/images/filler_images/stock_male.png" alt="..." class="bannerImageSplash">
+										<img src="app/views/images/filler_images/stock_female.png" alt="..." class="bannerImageSplash">
+										<img src="app/views/images/filler_images/stock_female.png" alt="..." class="bannerImageSplash">
+										<img src="app/views/images/filler_images/stock_male.png" alt="..." class="bannerImageSplash">
 									</div>
 									<div class="carousel-item">
-										<img src="images/filler_images/stock_male.png" alt="..." class="bannerImageSplash">
-										<img src="images/filler_images/stock_female.png" alt="..." class="bannerImageSplash">
-										<img src="images/filler_images/stock_female.png" alt="..." class="bannerImageSplash">
-										<img src="images/filler_images/stock_male.png" alt="..." class="bannerImageSplash">
+										<img src="app/views/images/filler_images/stock_male.png" alt="..." class="bannerImageSplash">
+										<img src="app/views/images/filler_images/stock_female.png" alt="..." class="bannerImageSplash">
+										<img src="app/views/images/filler_images/stock_female.png" alt="..." class="bannerImageSplash">
+										<img src="app/views/images/filler_images/stock_male.png" alt="..." class="bannerImageSplash">
 									</div>
 								</div>
 							</div>
@@ -214,9 +215,9 @@
 					<div class="col-sm-4 col-xs-12 text-center border-left">
 						<h4 class="ft-text-title">FAQS</h4>
 						<div class="pspt-dtls">
-							<a href="pages/faq_general.php" class="about">General</a>
-							<a href="pages/faq_teacher.php" class="team">Teacher</a>
-							<a href="pages/faq_student.php" class="advertise">Students</a>
+							<a href="app/views/pages/faq_general.php" class="about">General</a>
+							<a href="app/views/pages/faq_teacher.php" class="team">Teacher</a>
+							<a href="app/views/pages/faq_student.php" class="advertise">Students</a>
 						</div>
 					</div>		
 				</div>	
