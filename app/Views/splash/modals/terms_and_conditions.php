@@ -10,8 +10,8 @@
 			</div>
 			<div class="modal-body">
 				<div class="wrapper fadeInDown">
-					<?php require "splash/mission_text.txt"; ?>
-					<?php require "splash/mission_text.txt"; ?>
+					<?php require "app/views/splash/mission_text.txt"; ?>
+					<?php require "app/views/splash/mission_text.txt"; ?>
 				</div>
 			</div>
 			<div class="modal-footer">

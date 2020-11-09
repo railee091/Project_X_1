@@ -3,13 +3,13 @@
 		<title>Log-in</title>
 		
 		<!-- Bootstrap CSS -->
-		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="app/views/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Bootstrap core JavaScript -->
-		<script src="assets/jquery/jquery.min.js"></script> <!--qjeury-->
-		<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script> <!--bootsrap js-->
+		<script src="app/views/assets/jquery/jquery.min.js"></script> <!--qjeury-->
+		<script src="app/views/assets/bootstrap/js/bootstrap.bundle.min.js"></script> <!--bootsrap js-->
 		
 		<!-- main CSS -->
-		<link href="assets/main.css" rel="stylesheet">
+		<link href="app/views/assets/main.css" rel="stylesheet">
 	</head>
 	<body>
 		<!-- navigation start -->
@@ -114,7 +114,7 @@
 							<span class="section-heading-upper">Our Mission</span>
 						</h2>
 						<p class="mb-3">
-						<?php require "splash/mission_text.txt"; ?>
+						<?php require "app/views/splash/mission_text.txt"; ?>
 						</p>
 					</div>
 				</div>
@@ -128,7 +128,7 @@
 							<span class="section-heading-upper">Our Vision</span>
 						</h2>
 						<p class="mb-3">
-							<?php require "splash/mission_text.txt"; ?>
+							<?php require "app/views/splash/mission_text.txt"; ?>
 						</p>
 					</div>
 				</div>
@@ -142,7 +142,7 @@
 							<span class="section-heading-upper">Be a teacher</span>
 						</h2>
 						<p class="mb-3">
-						<?php require "splash/mission_text.txt"; ?>
+						<?php require "app/views/splash/mission_text.txt"; ?>
 						</p>
 						<a href="#teacher" class="btn btn-primary">Apply to be a teacher</a>
 					</div>
