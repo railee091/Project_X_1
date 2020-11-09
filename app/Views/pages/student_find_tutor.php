@@ -227,7 +227,7 @@
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										<div class="row">	
 											<div class="col-sm">
-												<a title="see profile" href="#" class="btn btn-primary" data-toggle="modal" data-target="#teacherIdModal" ><i class="fas fa-user"></i></a>
+												<a title="see profile" href="tutor_profile.php" class="btn btn-primary"><i class="fas fa-user"></i></a>
 											</div>
 										</div>
 									</div>
