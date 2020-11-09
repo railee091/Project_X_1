@@ -39,7 +39,7 @@
                 </li>
 				-->
                 <li>
-                    <a href="#">Find Tutor</a>
+                    <a href="../pages/student_find_tutor.php">Find Tutor</a>
                 </li>
                 <li>
                     <a href="#">Contact</a>
