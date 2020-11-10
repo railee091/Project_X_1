@@ -11,7 +11,7 @@ class Home extends BaseController
 	public function showMain(){
 		return view("main");
 	}
-	
+
 	public function loginDetails(){
 		$data = [
 			'loginName' => $this->request->getVar("loginTeacherUsername"),
@@ -19,7 +19,7 @@ class Home extends BaseController
 		];
 		$db = db_connect();
 		$loginFind = new InflexionModel($db);
-		
+
 		$info = $loginFind->loginFinder($data);
 		return $info;
 	}
