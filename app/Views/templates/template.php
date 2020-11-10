@@ -29,6 +29,15 @@
 								Signup
 							</button>
 						</li>
+						
+						<li class="nav-item">
+							<button type="button" class="nav-link btn btn-primary rounded-0" data-toggle="modal" data-target="#logInTeacherModal">
+								Login
+							</button>
+						</li>
+						
+						
+						<!--
 						<li class="nav-item">
 							<div class="dropdown">
 								<button class="nav-link btn btn-primary rounded-0	" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,7 +67,7 @@
 		</nav>
 		<!--navigation end-->
 		
-		<?php //require "splash/modals/signup/signup_modal.php"; ?>
+		
 		<?php //require "splash/modals/login/login_modal.php"; ?>
 		<?php //require "splash/modals/re-enroll/reenroll_modal.php"; ?>
 		

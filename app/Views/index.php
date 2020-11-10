@@ -80,5 +80,6 @@
 				</div>
 			</div>
 		</section>
-
+		<?php require "app/views/splash/modals/login/login_modal.php"; ?>
+		<?php require "app/views/splash/modals/signup/signup_modal.php"; ?>
 		<?= $this->endSection() ?>
