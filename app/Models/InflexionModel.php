@@ -11,4 +11,13 @@ class InflexionModel{
     $this->db =& $db;
   }
 
+
+  //LOGIN FUNCTION
+  public function loginFinder($loginDetails){
+    
+  }
+
+  public function registerAccount($registryDetails){
+    
+  }
 }

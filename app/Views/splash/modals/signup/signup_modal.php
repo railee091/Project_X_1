@@ -12,9 +12,12 @@
 				<div class="wrapper fadeInDown">
 				  <div id="formContent">
 					<!-- Login Form -->
-					<form>
-					  <input type="email" id="signUpEmail" class="splashInput fadeIn first" name="signUpEmail" placeholder="email">
-					  <input type="text" id="signUpUserName" class="splashInput fadeIn second" name="signUpUserName" placeholder="username">
+					<form action="register" method="POST">
+					  <input type="text" id="signUpFirstName" class="splashInput fadeIn second" name="signUpFirstName" placeholder="First Name">	
+					  <input type="text" id="signUpLastName" class="splashInput fadeIn first" name="signUpLastName" placeholder="Last Name">
+					  <input type="email" id="signUpEmail" class="splashInput fadeIn first" name="signUpEmail" placeholder="Email">
+					  <input type="text" id="signUpAddress" class="splashInput fadeIn first" name="signUpAddress" placeholder="Address">
+					  <input type="date" id="signUpBday" class="splashInput fadeIn first" name="signUpBday" placeholder="Birthdate">
 					  <input type="password" id="signUpPassword" class="splashInput fadeIn third" name="signUpPassword" placeholder="password">
 					  <input type="submit" class="fadeIn fourth" value="Log In">
 					</form>
