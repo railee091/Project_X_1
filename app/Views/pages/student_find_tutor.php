@@ -31,16 +31,12 @@
 			<?php require "navigation/sidebar_student.php"; ?>
 
         <!-- Page Content Holder -->
-        <div id="content">
+        <div id="main">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
-                    <button type="button" id="sidebarCollapse" class="navbar-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                    
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
@@ -95,13 +91,13 @@
                     </div>
                 </div>
             </nav>
-			<div class="col-md-12">
+			<div class="col-md">
 				<a href="student_dashboard.php"><button type="button" class="btn btn-primary">BACK</button></a>
 				<div class="card">
 					<div class="card-body">
 						<form>
 							<div class="row">
-								<div class="col-md-12">
+								<div class="col-md">
 									<h4>Find Tutor</h4>
 									<hr>
 								</div>
@@ -243,14 +239,6 @@
 
     <!-- Popper.JS -->
     <script src="../assets/jquery/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $(this).toggleClass('active');
-            });
-        });
-    </script>
 </body>
 <style>
 .btn.active {                
