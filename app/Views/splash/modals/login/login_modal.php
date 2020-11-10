@@ -12,7 +12,7 @@
 				<div class="wrapper fadeInDown">
 				  <div id="formContent">
 					<!-- Login Form -->
-					<form action="app/views/pages/teacher_dashboard.php">
+					<form action="login" method="POST">
 					  <input type="text" id="loginTeacherUsername" class="splashInput fadeIn second" name="loginTeacherUsername" placeholder="login">
 					  <input type="password" id="loginTeacherPassword" class="splashInput fadeIn third" name="loginTeacherPassword" placeholder="password">
 					  <input type="submit" class="fadeIn fourth" value="Log In">
