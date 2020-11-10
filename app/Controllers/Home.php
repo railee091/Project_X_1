@@ -26,10 +26,22 @@ class Home extends BaseController
 
 	public function registryDetails(){
 		$data = [
-			'email' => $this->request->getVar("signUpEmail"),
-			'username' => $this->request->getVar("signUpUsername"),
-			'username' => $this->request->getVar("signUpPassword"),
-			
+			'mem_email' => $this->request->getVar("signUpEmail"),
+			'mem_last_name' => $this->request->getVar("signUpLastName"),
+			'mem_first_name' => $this->request->getVar("signUpFirstName"),
+			'mem_address' => $this->request->getVar("signUpAddress"),
+			'mem_bday' => $this->request->getVar("signUpBday"),
+			'mem_contact' => $this->request->getVar("signUpContact"),
+			'mem_password' => $this->request->getVar("signUpPassword"),
 		];
+
+		$db = db_connect();
+		$register = new InflexionModel($db);
+
+		$reg = $register->registerAccount($data);
+
+		if($reg == 1){
+			return "Successfully registered";
+		}
 	}
 }

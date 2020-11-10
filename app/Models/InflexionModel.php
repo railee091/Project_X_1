@@ -18,6 +18,9 @@ class InflexionModel{
   }
 
   public function registerAccount($registryDetails){
-    
+    $register = $this->db->table("members")
+                            ->insert($registryDetails);
+
+    return $register;
   }
 }

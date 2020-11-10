@@ -18,6 +18,7 @@
 					  <input type="email" id="signUpEmail" class="splashInput fadeIn first" name="signUpEmail" placeholder="Email">
 					  <input type="text" id="signUpAddress" class="splashInput fadeIn first" name="signUpAddress" placeholder="Address">
 					  <input type="date" id="signUpBday" class="splashInput fadeIn first" name="signUpBday" placeholder="Birthdate">
+					  <input type="contact" id="signUpContact" class="splashInput fadeIn first" name="signUpContact" placeholder="Contact Number">
 					  <input type="password" id="signUpPassword" class="splashInput fadeIn third" name="signUpPassword" placeholder="password">
 					  <input type="submit" class="fadeIn fourth" value="Log In">
 					</form>
