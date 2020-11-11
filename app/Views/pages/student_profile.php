@@ -24,7 +24,7 @@
 
 <body>
 
-    <div class="wrapper">
+    <div class="wrap">
         <!-- Sidebar Holder -->
         
 			<?php require "navigation/sidebar_student.php"; ?>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </nav>
-			<div class="col-md-9">
+			<div class="col-md">
 				<a href="teacher_dashboard.php"><button type="button" class="btn btn-primary">BACK</button></a>
 				<div class="card">
 					<div class="card-body">

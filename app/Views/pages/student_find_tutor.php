@@ -15,7 +15,6 @@
 		
 	<!-- main CSS -->		
     <link rel="stylesheet" href="../assets/dashboard.css">
-    <link rel="stylesheet" href="../assets/teacher_avatar_card.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -25,7 +24,7 @@
 
 <body>
 
-    <div class="wrapper">
+    <div class="wrap">
         <!-- Sidebar Holder -->
         
 			<?php require "navigation/sidebar_student.php"; ?>
@@ -204,7 +203,7 @@
 					
 				</div>
 			</div>
-			<div class="col-md-12">
+			<div class="col-md">
 				<div class="card">
 					<div class="card-body">
 						<div class="row">

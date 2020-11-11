@@ -47,7 +47,7 @@ a, a:hover, a:focus {
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
-.wrapper {
+.wrap {
     display: flex;
     width: 100%;
     align-items: stretch;
