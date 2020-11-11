@@ -8,29 +8,15 @@
 		<ul class="navbar-nav mr-auto">
 		<li class="nav-item active">
 			<a class="nav-link" href="student_dashboard.php">
-				<i class="fa fa-home"></i>
+				<i class="fa fa-home"></i>Home
 				<span class="sr-only">(current)</span>
 			</a>
-      </li>
-      <li class="nav-item">
-			<a class="nav-link" href="#">
-				<i class="fa fa-envelope-o">
-					<span class="badge badge-danger">11</span>
-				</i>
-			</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa fa-envelope-o">
-            <span class="badge badge-warning">11</span>
-          </i>
-        </a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-envelope-o">
             <span class="badge badge-primary">11</span>
-          </i>
+          </i>Test
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>

@@ -18,8 +18,7 @@
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
+   
 </head>
 
 <body>
@@ -31,62 +30,8 @@
 			
         <!-- Page Content Holder -->
         <div id="main">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <div class="btn-group dropleft nav-item">
-									<button class="rounded-0 btn btn-secondary" title="messages" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<i class="fas fa-envelope"></i>
-									</button>
-									<div class="dropdown-menu" aria-labelledby="">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</div>
-								</div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="btn-group dropleft nav-item">
-									<button class="rounded-0 btn btn-secondary" title="notifications" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<i class="fas fa-bell"></i>
-									</button>
-									<div class="dropdown-menu" aria-labelledby="">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</div>
-								</div>
-                            </li>
-                            <li class="btn-group dropleft nav-item">
-                                <button class="rounded-0 btn btn-secondary" title="classes" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									<i class="fas fa-book"></i>
-								</button>
-								<div class="dropdown-menu" aria-labelledby="">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</div>	
-                            </li>
-                            <li class="btn-group dropleft nav-item">
-                                <button class="rounded-0 btn btn-secondary" title="credits" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									<i class="fas fa-dollar-sign"></i>
-								</button>
-								<div class="dropdown-menu" aria-labelledby="">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            
+			<?php require "navigation/top_nav.php"; ?>
 			
 			<div class="col-md">
 				<a href="teacher_dashboard.php"><button type="button" class="btn btn-primary">BACK</button></a>
