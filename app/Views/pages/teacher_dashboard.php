@@ -24,7 +24,7 @@
 
 <body>
 
-    <div class="wrapper">
+    <div class="wrap">
         <!-- Sidebar Holder -->
         
 			<?php require "navigation/sidebar_teacher.php"; ?>
