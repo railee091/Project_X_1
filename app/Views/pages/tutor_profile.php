@@ -97,7 +97,7 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="profile-img">
-									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
+									<img src="https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg-1024x683.jpg" alt=""/>
 									<!--<div class="file btn btn-lg btn-primary">
 										Change Photo
 										<input type="file" name="file"/>
@@ -107,10 +107,10 @@
 							<div class="col-md-6">
 								<div class="profile-head">
 											<h5>
-												Kshiti Ghelani
+												Jane Smith
 											</h5>
 											<h6>
-												Web Developer and Designer
+												English Teacher
 											</h6>
 											<p class="proile-rating">RANKINGS : <span>5/5</span></p>
 									<ul class="nav nav-tabs" id="myTab" role="tablist">

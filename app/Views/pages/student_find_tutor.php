@@ -216,7 +216,7 @@
 						<div class="container">
 							<div class="row">
 								<div class="card" style="width: 15rem;">
-									<img class="card-img-top" src="../images/filler_images/stock_male.png" alt="Card image cap">
+									<img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg-1024x683.jpg" alt="Card image cap">
 									<div class="card-body">
 										<h5 class="card-title">Card title</h5>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

@@ -58,7 +58,7 @@
 
 <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
 
-		<a href="student_profile.php"><img style="width:70%;" src="../images/filler_images/stock_female.png" alt="Avatar" class="align-middle avatar"></a>
+		<a href="student_profile.php"><img style="width:70%; border-radius: 60%;"src="https://image.kpopmap.com/2018/05/akb48-goto-moe.jpg" alt="Avatar" class="align-middle avatar"></a>
 
 
   <a href="../pages/student_find_tutor.php"><span><i class="material-icons">info</i><span class="icon-text">Find Tutor</span></a><br>
@@ -83,7 +83,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #AED6F1 ;
   transition: 0.5s;
   overflow-x: hidden;
   padding-top: 60px;
@@ -94,7 +94,7 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #834FE4;
   display: block;
 }
 
