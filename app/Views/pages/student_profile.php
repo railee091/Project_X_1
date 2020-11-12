@@ -26,11 +26,9 @@
     <div class="wrap">
         <!-- Sidebar Holder -->
         
-			<?php require "navigation/sidebar_student.php"; ?>
-
+			<?php require "navigation/sidebar_student.php"; ?>			
         <!-- Page Content Holder -->
         <div id="main">
-
 			<?php require "navigation/top_nav.php"; ?>
 			<div class="col-md">
 				<a href="teacher_dashboard.php"><button type="button" class="btn btn-primary">BACK</button></a>
