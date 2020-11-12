@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
     <div class="wrap">
         <!-- Sidebar Holder -->
         
@@ -55,63 +54,62 @@
 						<div class="row">
 							<div class="col-md-12">
 								<form>
-								  <div class="form-group row">
-									<label for="username" class="col-4 col-form-label">User Name*</label> 
-									<div class="col-8">
-									  <input id="username" name="username" placeholder="Username" class="form-control here" required="required" type="text">
+									<div class="form-group row">
+										<label for="username" class="col-4 col-form-label">User Name*</label> 
+										<div class="col-8">
+											<input id="username" name="username" placeholder="Username" class="form-control here" required="required" type="text">
+										</div>
 									</div>
-								  </div>
-								  <div class="form-group row">
-									<label for="name" class="col-4 col-form-label">First Name</label> 
-									<div class="col-8">
-									  <input id="name" name="name" placeholder="First Name" class="form-control here" type="text">
+									<div class="form-group row">
+										<label for="name" class="col-4 col-form-label">First Name</label> 
+										<div class="col-8">
+											<input id="name" name="name" placeholder="First Name" class="form-control here" type="text">
+										</div>
 									</div>
-								  </div>
-								  <div class="form-group row">
-									<label for="lastname" class="col-4 col-form-label">Last Name</label> 
-									<div class="col-8">
-									  <input id="lastname" name="lastname" placeholder="Last Name" class="form-control here" type="text">
+									<div class="form-group row">
+										<label for="lastname" class="col-4 col-form-label">Last Name</label> 
+										<div class="col-8">
+											<input id="lastname" name="lastname" placeholder="Last Name" class="form-control here" type="text">
+										</div>
 									</div>
-								  </div>
-								  <div class="form-group row">
-									<label for="text" class="col-4 col-form-label">Nick Name*</label> 
-									<div class="col-8">
-									  <input id="text" name="text" placeholder="Nick Name" class="form-control here" required="required" type="text">
+									<div class="form-group row">
+										<label for="text" class="col-4 col-form-label">Nick Name*</label> 
+										<div class="col-8">
+											<input id="text" name="text" placeholder="Nick Name" class="form-control here" required="required" type="text">
+										</div>
 									</div>
-								  </div>
-								  <div class="form-group row">
-									<label for="email" class="col-4 col-form-label">Email*</label> 
-									<div class="col-8">
-									  <input id="email" name="email" placeholder="Email" class="form-control here" required="required" type="text">
+									<div class="form-group row">
+										<label for="email" class="col-4 col-form-label">Email*</label> 
+										<div class="col-8">
+											<input id="email" name="email" placeholder="Email" class="form-control here" required="required" type="text">
+										</div>
 									</div>
-								  </div>
-								  <div class="form-group row">
-									<label for="website" class="col-4 col-form-label">Website</label> 
-									<div class="col-8">
-									  <input id="website" name="website" placeholder="website" class="form-control here" type="text">
+									<div class="form-group row">
+										<label for="website" class="col-4 col-form-label">Website</label> 
+										<div class="col-8">
+											<input id="website" name="website" placeholder="website" class="form-control here" type="text">
+										</div>
 									</div>
-								  </div>
-								  <div class="form-group row">
-									<label for="publicinfo" class="col-4 col-form-label">Public Info</label> 
-									<div class="col-8">
-									  <textarea id="publicinfo" name="publicinfo" cols="40" rows="4" class="form-control"></textarea>
+									<div class="form-group row">
+										<label for="publicinfo" class="col-4 col-form-label">Public Info</label> 
+										<div class="col-8">
+											<textarea id="publicinfo" name="publicinfo" cols="40" rows="4" class="form-control"></textarea>
+										</div>
 									</div>
-								  </div>
-								  <div class="form-group row">
-									<label for="newpass" class="col-4 col-form-label">New Password</label> 
-									<div class="col-8">
-									  <input id="newpass" name="newpass" placeholder="New Password" class="form-control here" type="text">
+									<div class="form-group row">
+										<label for="newpass" class="col-4 col-form-label">New Password</label> 
+										<div class="col-8">
+											<input id="newpass" name="newpass" placeholder="New Password" class="form-control here" type="text">
+										</div>
+									</div> 
+									<div class="form-group row">
+										<div class="offset-4 col-8">
+											<button name="submit" type="submit" class="btn btn-primary">save</button>
+										</div>
 									</div>
-								  </div> 
-								  <div class="form-group row">
-									<div class="offset-4 col-8">
-									  <button name="submit" type="submit" class="btn btn-primary">save</button>
-									</div>
-								  </div>
 								</form>
 							</div>
 						</div>
-						
 					</div>
 				</div>
 				<br/>
@@ -129,24 +127,23 @@
 								  <div class="form-group row">
 									<label for="publicinfo" class="col-4 col-form-label">Intro</label> 
 									<div class="col-8">
-									  <textarea id="publicinfo" name="publicinfo" cols="40" rows="4" class="form-control"></textarea>
+										<textarea id="publicinfo" name="publicinfo" cols="40" rows="4" class="form-control"></textarea>
 									</div>
 								  </div>
 								  <div class="form-group row">
 									<label for="publicinfo" class="col-4 col-form-label">About Me</label> 
 									<div class="col-8">
-									  <textarea id="publicinfo" name="publicinfo" cols="40" rows="4" class="form-control"></textarea>
+										<textarea id="publicinfo" name="publicinfo" cols="40" rows="4" class="form-control"></textarea>
 									</div>
 								  </div>
 								  <div class="form-group row">
 									<div class="offset-4 col-8">
-									  <button name="submit" type="submit" class="btn btn-primary">save</button>
+										<button name="submit" type="submit" class="btn btn-primary">save</button>
 									</div>
 								  </div>
 								</form>
 							</div>
 						</div>
-						
 					</div>
 				</div>
 				<br/>
@@ -160,42 +157,42 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-							<form>
-							  <div class="form-group">
-								<label for="exampleFormControlFile1">Example file input</label>
-								<input type="file" class="form-control-file" id="exampleFormControlFile1">
-							  </div>
-							</form>
+								<form>
+									<div class="form-group">
+										<label for="exampleFormControlFile1">Example file input</label>
+										<input type="file" class="form-control-file" id="exampleFormControlFile1">
+									</div>
+								</form>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
 								<div class="container">
-								  <div class="row">
-									<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-									  <a href="#lightbox" data-slide-to="0"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
-									</div>
-									<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-									  <a href="#lightbox" data-slide-to="1"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
-									</div>
-									<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-									  <a href="#lightbox" data-slide-to="2"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
-									</div>
-									<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-									  <a href="#lightbox" data-slide-to="3"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
-									</div>
-									<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-									  <a href="#lightbox" data-slide-to="4"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
-									</div>
-									<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-									  <a href="#lightbox" data-slide-to="5"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
-									</div>
-									<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-									  <a href="#lightbox" data-slide-to="6"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
-									</div>
-									<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-									  <a href="#lightbox" data-slide-to="7"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
-									</div>    
+									<div class="row">
+										<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
+											<a href="#lightbox" data-slide-to="0"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
+										</div>
+										<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
+											<a href="#lightbox" data-slide-to="1"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
+										</div>
+										<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
+											<a href="#lightbox" data-slide-to="2"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
+										</div>
+										<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
+											<a href="#lightbox" data-slide-to="3"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
+										</div>
+										<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
+											<a href="#lightbox" data-slide-to="4"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
+										</div>
+										<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
+											<a href="#lightbox" data-slide-to="5"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
+										</div>
+										<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
+											<a href="#lightbox" data-slide-to="6"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
+										</div>
+										<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
+											<a href="#lightbox" data-slide-to="7"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
+										</div>    
 								  </div>
 								</div>
 								<!-- Modal -->
