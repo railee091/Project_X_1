@@ -58,14 +58,14 @@
 
 <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
 
-		<a href="student_profile.php"><img style="width:70%; border-radius: 60%;"src="https://image.kpopmap.com/2018/05/akb48-goto-moe.jpg" alt="Avatar" class="align-middle avatar"></a>
+		<a href="student_dashboard.php"><img style="width:70%; border-radius: 60%;"src="https://image.kpopmap.com/2018/05/akb48-goto-moe.jpg" alt="Avatar" class="align-middle avatar"></a>
 
 	<a href="student_profile.php"><i class="material-icons">spa</i><span class="icon-text"></span>My Profile</a></span>
-	<a href="../pages/student_find_tutor.php"><span><i class="material-icons">info</i><span class="icon-text">Find Tutor</span></a>
-	<a href="../pages/student_my_classes.php"><i class="material-icons">book_online</i><span class="icon-text"></span>My Classes</span></a><br>
-	<a href="../pages/student_groups.php"><i class="material-icons">card_membership</i><span class="icon-text"></span>Groups<span></a>
-	<a href="../pages/student_credits.php"><i class="material-icons">monetization_on</i><span class="icon-text"></span>Credits</span></a><br>
-	<a href="../pages/student_files.php"><i class="material-icons">source</i><span class="icon-text"></span>Your files<span></a>
+	<a href="student_find_tutor.php"><span><i class="material-icons">info</i><span class="icon-text">Find Tutor</span></a>
+	<a href="student_my_classes.php"><i class="material-icons">book_online</i><span class="icon-text"></span>My Classes</span></a><br>
+	<a href="student_groups.php"><i class="material-icons">card_membership</i><span class="icon-text"></span>Groups<span></a>
+	<a href="student_credits.php"><i class="material-icons">monetization_on</i><span class="icon-text"></span>Credits</span></a><br>
+	<a href="student_files.php"><i class="material-icons">source</i><span class="icon-text"></span>Your files<span></a>
 	<a href="../../../"><i class="material-icons">exit_to_app</i><span class="icon-text"></span>Logout<span></a>
 </div>
 

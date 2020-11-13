@@ -27,12 +27,14 @@
     <div class="wrap">
         <!-- Sidebar Holder -->
         
-			<?php require "navigation/sidebar_student.php"; ?>
+			<?php require "../navigation/sidebar_student.php"; ?>
 
         <!-- Page Content Holder -->
         <div id="main">
-
-			<?php require "navigation/top_nav.php"; ?>
+			
+			<div class="row">
+				<?php require "../navigation/top_nav.php"; ?>
+			</div>
 			<div class="col-md">
 				<a href="student_dashboard.php"><button type="button" class="btn btn-primary">BACK</button></a>
 				<div class="card">
@@ -165,7 +167,7 @@
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										<div class="row">	
 											<div class="col-sm">
-												<a title="see profile" href="tutor_profile.php" class="btn btn-primary"><i class="fas fa-user"></i></a>
+												<a title="see profile" href="student_tutor_profile.php" class="btn btn-primary"><i class="fas fa-user"></i></a>
 											</div>
 										</div>
 									</div>

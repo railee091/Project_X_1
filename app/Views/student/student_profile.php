@@ -25,10 +25,12 @@
     <div class="wrap">
         <!-- Sidebar Holder -->
         
-			<?php require "navigation/sidebar_student.php"; ?>			
+			<?php require "../navigation/sidebar_student.php"; ?>			
         <!-- Page Content Holder -->
         <div id="main">
-			<?php require "navigation/top_nav.php"; ?>
+			<div class="row">
+				<?php require "../navigation/top_nav.php"; ?>
+			</div>
 			<div class="col-md">
 			<div class="card">
 				<a href="teacher_dashboard.php"><button type="button" class="btn btn-primary">BACK</button></a>
@@ -245,8 +247,22 @@
 					<div class="card-body">
 						<div class="row">
 							<div class="col-md-12">
-								<h4>Linked Videos</h4>
-								<hr>
+								<div class="row">
+								<div class="col-sm-2">
+									<h4>Linked Videos</h4>
+								</div>
+								<div class="col-sm-10">
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon3">https://www.youtube.com/watch?v=iVMRlxyzoXo</span>
+										</div>
+										<input type="text" placeholder="link to your youtube video..." class="form-control" id="basic-url" aria-describedby="basic-addon3">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon3">submit</span>
+										</div>
+									</div>
+								</div>
+								</div>
 							</div>
 						</div>
 						<div class="row">

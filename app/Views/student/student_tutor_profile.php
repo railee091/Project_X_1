@@ -26,13 +26,15 @@
     <div class="wrap">
         <!-- Sidebar Holder -->
         
-			<?php require "navigation/sidebar_student.php"; ?>
+			<?php require "../navigation/sidebar_student.php"; ?>
 
         <!-- Page Content Holder -->
         <div id="main">
 
             
-			<?php require "navigation/top_nav.php"; ?>
+			<div class="row">
+				<?php require "../navigation/top_nav.php"; ?>
+			</div>
 			<div class="col-md-9">
 				<a href="student_find_tutor.php"><button type="button" class="btn btn-primary">BACK</button></a>
 				<div class="container emp-profile">
