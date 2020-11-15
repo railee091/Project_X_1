@@ -11,8 +11,9 @@ class Home extends BaseController
 	public function showMain(){
 		return view("main");
 	}
+	
 	public function studentDashboard(){
-		return view("student_dashboard");
+		return view("student/student_dashboard");
 	}
 	
 

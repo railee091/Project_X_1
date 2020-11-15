@@ -20,12 +20,20 @@
 					  <input type="date" id="signUpBday" class="splashInput fadeIn first" name="signUpBday" placeholder="Birthdate">
 					  <input type="contact" id="signUpContact" class="splashInput fadeIn first" name="signUpContact" placeholder="Contact Number">
 					  <input type="password" id="signUpPassword" class="splashInput fadeIn third" name="signUpPassword" placeholder="password">
-					  <input type="submit" class="fadeIn fourth" value="Log In">
+					  <div class="form-group">
+						<label for="exampleFormControlSelect1">register as:</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+						  <option>Student</option>
+						  <option>Tutor</option>
+						</select>
+					  </div>
+					  <input type="submit" class="fadeIn fourth" value="Sign-up">
 					</form>
 				  </div>
 				</div>
 			</div>
 			<div class="modal-footer">
+			
 			</div>
 		</div>
 	</div>
