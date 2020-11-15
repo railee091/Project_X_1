@@ -145,5 +145,23 @@
 				</div>
 			</div>
 
+<style>
+.btn.active {                
+	display: none;		
+}
 
+.btn span:nth-of-type(1)  {            	
+	display: none;
+}
+.btn span:last-child  {            	
+	display: block;		
+}
+
+.btn.active  span:nth-of-type(1)  {            	
+	display: block;		
+}
+.btn.active span:last-child  {            	
+	display: none;			
+}
+</style>
 <?= $this->endSection() ?>			
