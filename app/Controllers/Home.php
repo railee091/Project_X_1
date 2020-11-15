@@ -17,6 +17,11 @@ class Home extends BaseController
 	}
 	
 
+	public function tutorDashboard(){
+		return view("teacher/teacher_dashboard");
+	}
+	
+
 	public function loginDetails(){
 		$data = [
 			'loginName' => $this->request->getVar("loginTeacherUsername"),
