@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->add('login', 'Home::loginDetails');
 $routes->add('register', 'Home::registryDetails');
+$routes->add('student', 'Home::studentDashboard');
 
 /**
  * --------------------------------------------------------------------

@@ -11,6 +11,10 @@ class Home extends BaseController
 	public function showMain(){
 		return view("main");
 	}
+	public function studentDashboard(){
+		return view("student_dashboard");
+	}
+	
 
 	public function loginDetails(){
 		$data = [
