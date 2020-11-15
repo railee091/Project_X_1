@@ -8,10 +8,10 @@
 
     <title>Student's Dashboard</title>
 	<!-- Bootstrap CSS -->
-	<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="app/views/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Bootstrap core JavaScript -->
-	<script src="../assets/jquery/jquery.min.js"></script> <!--qjeury-->
-	<script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script> <!--bootsrap js-->
+	<script src="app/views/assets/jquery/jquery.min.js"></script> <!--qjeury-->
+	<script src="app/views/assets/bootstrap/js/bootstrap.bundle.min.js"></script> <!--bootsrap js-->
 		
 	<!-- main CSS -->		
     <link rel="stylesheet" href="../assets/dashboard.css">
@@ -25,12 +25,11 @@
     <div class="wrapper">
         <!-- Sidebar Holder -->
         
-			<?php require "../navigation/sidebar_student.php"; ?>
-
+			<?php require "app/views/navigation/sidebar_student.php"; ?>
         <!-- Page Content Holder -->
         <div id="main">
 			<div class="row">
-			<?php require "../navigation/top_nav.php"; ?>
+			<?php require "app/views/navigation/top_nav.php"; ?>
             </div>
 			
 			<div class="row">
