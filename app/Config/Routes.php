@@ -33,8 +33,12 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->add('login', 'Home::loginDetails');
 $routes->add('register', 'Home::registryDetails');
+
 $routes->get('student', 'Home::studentDashboard');
 $routes->get('tutor', 'Home::tutorDashboard');
+
+$routes->get('student-profile', 'Home::studentProfile');
+$routes->get('student-find-tutor', 'Home::studentFindTutor');
 
 /**
  * --------------------------------------------------------------------

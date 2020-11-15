@@ -21,6 +21,13 @@ class Home extends BaseController
 		return view("teacher/teacher_dashboard");
 	}
 	
+	public function studentProfile(){
+		return view("student/student_profile");
+	}	
+	public function studentFindTutor(){
+		return view("student/student_find_tutor");
+	}
+	
 
 	public function loginDetails(){
 		$data = [

@@ -1,58 +1,4 @@
-<!--<nav id="sidebar">
-            <div class="sidebar-header">
-				<center>
-					<a href="student_profile.php"><img src="../images/filler_images/stock_female.png" alt="Avatar" class="align-middle avatar"></a>
-				</center>
-            </div>
 
-            <ul class="list-unstyled components">
-                <p>Student's Dashboard</p>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Your classes</a>
-                        </li>
-                        <li>
-                            <a href="#">Class History</a>
-                        </li>
-                        <li>
-                            <a href="#">Modules</a>
-                        </li>
-                    </ul>
-                </li>
-				<li>
-                    <a href="#">About</a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Find Tutor</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="../pages/student_find_tutor.php">Find Tutor</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="../../../" class="download">LOGOUT</a>
-                </li>
-                <li>
-                    <a href="" class="article">link</a>
-                </li>
-            </ul>
-        </nav>-->
 		
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -60,8 +6,8 @@
 
 		<a href="student_dashboard.php"><img style="width:70%; border-radius: 60%;"src="https://image.kpopmap.com/2018/05/akb48-goto-moe.jpg" alt="Avatar" class="align-middle avatar"></a>
 
-	<a href="student_profile.php"><i class="material-icons">spa</i><span class="icon-text"></span>My Profile</a></span>
-	<a href="student_find_tutor.php"><span><i class="material-icons">info</i><span class="icon-text">Find Tutor</span></a>
+	<a href="student-profile"><i class="material-icons">spa</i><span class="icon-text"></span>My Profile</a></span>
+	<a href="student-find-tutor"><span><i class="material-icons">info</i><span class="icon-text">Find Tutor</span></a>
 	<a href="student_my_classes.php"><i class="material-icons">book_online</i><span class="icon-text"></span>My Classes</span></a><br>
 	<a href="student_groups.php"><i class="material-icons">card_membership</i><span class="icon-text"></span>Groups<span></a>
 	<a href="student_credits.php"><i class="material-icons">monetization_on</i><span class="icon-text"></span>Credits</span></a><br>
