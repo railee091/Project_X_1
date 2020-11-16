@@ -72,6 +72,18 @@
 												<label class="custom-control-label" for="checkbox4">Available for Kids</label>
 											  </div>
 											</a>
+											<a class="dropdown-item" href="#">
+											  <div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox5" >
+												<label class="custom-control-label" for="checkbox4">Business English</label>
+											  </div>
+											</a>
+											<a class="dropdown-item" href="#">
+											  <div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox5" >
+												<label class="custom-control-label" for="checkbox4">Begginer English</label>
+											  </div>
+											</a>
 										  </div>
 										  <!-- Basic dropdown -->
                                 </div>
@@ -121,7 +133,7 @@
 									<p class='card-text'>Lorem ipsum dolor sit amet, ...</p>
 								</div>
 								<div class='card-footer text-center bg-primary'>
-								  <a href='#' class='btn btn-primary stretched-link'>See more</a>
+								  <a href='student-tutor-profile' class='btn btn-primary stretched-link'>See more</a>
 								</div>
 							  </div>
 							</div>

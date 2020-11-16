@@ -43,6 +43,7 @@ $routes->get('student-classes', 'Home::studentClasses');
 $routes->get('student-groups', 'Home::studentGroups');
 $routes->get('student-account', 'Home::studentAccount');
 $routes->get('student-files', 'Home::studentFiles');
+$routes->get('student-tutor-profile', 'Home::studentTutorProfile');
 
 /**
  * --------------------------------------------------------------------
