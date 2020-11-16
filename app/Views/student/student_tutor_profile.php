@@ -158,8 +158,12 @@
 					<div class="row mb-2">
 						<div class="col-md-12 text-muted">Schedule:</div>
 						<!-- Grid column -->
-						<div class="col-lg-4 col-md-12 mb-4">
-							
+						<div class="col-lg-12 col-md-12 mb-4">
+							<div id="picker"></div>
+							<div>
+								<p>Selected dates / times:</p>
+								<div id="selected-dates"></div>
+							</div>
 						</div>
 					  <!-- Grid column -->
 					</div>
@@ -274,12 +278,7 @@
 	</div>
 </div>
 <style>
-body{margin-top:20px;
-background: #f5f5f5;
-}
-.theme-bg-white {
-    background-color: #fff !important;
-}
+
 .ui-w-100 {
     width: 100px !important;
     height: auto;
@@ -325,4 +324,245 @@ background: #f5f5f5;
     width: 100% !important;
 }
 </style>
+<style><!-- calendar style--->
+#myc-container {
+    width: inherit;
+}
+
+#myc-nav-container {
+    margin-bottom: 15px;
+    width: inherit;
+}
+
+#myc-current-month-year-container {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: capitalize;
+    vertical-align: top;
+    width: 68%;
+}
+
+#myc-prev-week-container {
+    display: inline-block;
+    width: 15%;
+}
+
+#myc-next-week-container {
+    display: inline-block;
+    width: 15%;
+}
+
+#myc-prev-week {
+    border: 1px solid #e0e0e0;
+    border-radius: 80px;
+    color: #e0e0e0;
+    cursor: pointer;
+    float: left;
+    font-size: 1.6em;
+    font-weight: lighter;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+}
+
+#myc-next-week {
+    border: 1px solid #e0e0e0;
+    border-radius: 80px;
+    color: #e0e0e0;
+    cursor: pointer;
+    float: right;
+    font-size: 1.6em;
+    font-weight: lighter;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+}
+
+#myc-prev-week:hover, #myc-next-week:hover {
+    border: 1px solid #bdbdbd;
+    color: #bdbdbd;
+}
+
+#myc-week-container {
+    border: 1px solid #e0e0e0;
+}
+
+#myc-dates-container {
+    background-color: #fafafa;
+}
+
+.myc-date-header {
+    border-right: 1px solid #e0e0e0;
+    display: inline-block;
+    min-height: 50px;
+    padding: 15px 0px 15px 15px;
+    vertical-align: top;
+    width: 13.50%;
+}
+
+.myc-date-header:first-of-type {
+    padding-left: 15px;
+}
+
+.myc-date-header:last-of-type {
+    border-right: none;
+    width: 13%;
+}
+
+#myc-available-time-container {
+    border-top: 1px solid #e0e0e0;
+    min-height: 150px;
+}
+
+.myc-day-time-container {
+    /*border-right: 1px solid #e0e0e0;*/
+    display: inline-block;
+    height: 100%;
+    padding: 15px 15px 15px 15px;
+    vertical-align: top;
+    width: 13%;
+}
+
+.myc-day-time-container:first-of-type {
+    padding-left: 15px;
+}
+
+.myc-day-time-container:last-of-type {
+    border-right: none;
+    width: 13%;
+}
+
+.myc-date-number {
+    font-size: 1.8em;
+    font-weight: lighter;
+}
+
+.myc-available-time {
+    background-color: #29b6f6;
+    border-radius: 0px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 0px 10px 0px;
+    text-align: center;
+}
+
+.myc-available-time.selected, .myc-available-time:hover {
+    background-color: #222;
+}
+
+.myc-date-display {
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 768px) {
+    .myc-date-header, .myc-day-time-container {
+        width: 13.5%;
+    }
+    /*.myc-date-header:last-of-type, .myc-day-time-container:last-of-type {
+        width: 12%;
+    }*/
+}
+
+</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="app/views/assets/jquery/mark-your-calendar.js"></script>
+	<script type="text/javascript">
+        (function($) {
+          $('#picker').markyourcalendar({
+            availability: [
+              ['1:00', '2:00', '3:00', '4:00', '5:00'],
+              ['2:00'],
+              ['3:00'],
+              ['4:00'],
+              ['5:00'],
+              ['6:00'],
+              ['7:00']
+            ],
+            isMultiple: true,
+            onClick: function(ev, data) {
+              // data is a list of datetimes
+              console.log(data);
+              var html = ``;
+              $.each(data, function() {
+                var d = this.split(' ')[0];
+                var t = this.split(' ')[1];
+                html += `<p>` + d + ` ` + t + `</p>`;
+              });
+              $('#selected-dates').html(html);
+            },
+            onClickNavigator: function(ev, instance) {
+              var arr = [
+                [
+                  ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                  ['1:00', '5:00'],
+                  ['2:00', '5:00'],
+                  ['3:30'],
+                  ['2:00', '5:00'],
+                  ['2:00', '5:00'],
+                  ['2:00', '5:00']
+                ],
+                [
+                  ['2:00', '5:00'],
+                  ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                  ['4:00', '5:00'],
+                  ['2:00', '5:00'],
+                  ['2:00', '5:00'],
+                  ['2:00', '5:00'],
+                  ['2:00', '5:00']
+                ],
+                [
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00']
+                ],
+                [
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00']
+                ],
+                [
+                  ['4:00', '6:00'],
+                  ['4:00', '6:00'],
+                  ['4:00', '6:00'],
+                  ['4:00', '6:00'],
+                  ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                  ['4:00', '6:00'],
+                  ['4:00', '6:00']
+                ],
+                [
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00'],
+                  ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                  ['3:00', '6:00']
+                ],
+                [
+                  ['3:00', '4:00'],
+                  ['3:00', '4:00'],
+                  ['3:00', '4:00'],
+                  ['3:00', '4:00'],
+                  ['3:00', '4:00'],
+                  ['3:00', '4:00'],
+                  ['4:00', '5:00', '6:00', '7:00', '8:00']
+                ]
+              ]
+              var rn = Math.floor(Math.random() * 10) % 7;
+              instance.setAvailability(arr[rn]);
+            }
+          });
+        })(jQuery);
+    </script>
 <?= $this->endSection() ?>			        
