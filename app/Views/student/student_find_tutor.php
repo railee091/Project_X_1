@@ -1,167 +1,140 @@
 <?= $this->extend('templates/template_student') ?>
 
 <?= $this->section('content') ?>
-			<div class="col-md-12">
-				<a href="student_dashboard.php"><button type="button" class="btn btn-primary">BACK</button></a>
-				<div class="card">
-					<div class="card-body">
-						<form>
-							<div class="row">
-								<div class="col-md">
-									<h4>Find Tutor</h4>
-									<hr>
+		<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card acik-renk-form">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group ">
+									<label for="citizenship"><b>Citizenship:</b></label>
+                                    <select id="citizenship" class="form-control" >
+                                        <option selected>Philippines</option>
+                                        <option>United States</option>
+                                        <option>Turkey</option>
+                                        <option>United Kindom</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group ">
+									<label for="age"><b>Age:</b></label>
+                                    <select id="age" class="form-control" >
+                                        <option selected>Under 30 years old</option>
+                                        <option>30 years and over</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group ">
+									<label for="gender"><b>Gender:</b></label>
+                                    <select id="gender" class="form-control" >
+                                        <option selected>Unspecified<option>
+                                        <option>Female</option>
+                                        <option>Male</option>
+                                    </select>
+                                </div>
+                            </div>
+							<div class="col-md-3">
+								<label for="dropdown"><b>Options:</b></label>
+                                <div id="dropdown"class="form-group">
+                                      <!-- Basic dropdown -->
+										  <button class="btn btn-warning dropdown-toggle form-control" type="button" data-toggle="dropdown"
+												  aria-haspopup="true" aria-expanded="false">Specification</button>
+
+										  <div class="dropdown-menu">
+											<a class="dropdown-item">
+											  <!-- Default unchecked -->
+											  <div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox1">
+												<label class="custom-control-label" for="checkbox1">Free reservation</label>
+											  </div>
+											</a>
+											<a class="dropdown-item" href="#">
+											  <div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox2" checked>
+												<label class="custom-control-label" for="checkbox2">Free talking</label>
+											  </div>
+											</a>
+											<a class="dropdown-item" href="#">
+											  <div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox3">
+												<label class="custom-control-label" for="checkbox3">Native Speaker</label>
+											  </div>
+											</a>
+											<div class="dropdown-divider"></div>
+											<a class="dropdown-item" href="#">
+											  <div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkbox4" checked>
+												<label class="custom-control-label" for="checkbox4">Available for Kids</label>
+											  </div>
+											</a>
+										  </div>
+										  <!-- Basic dropdown -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group ">
+                                    <input type="text" class="form-control" placeholder="Tutor name or topic">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-primary form-control  pl-5 pr-5">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+		<br/>
+		<div class="row">
+            <div class="col-md-12">
+                <div class="card acik-renk-form">
+                    <div class="card-body">
+                        <div class="row">
+						<?php  
+							for ($x = 0; $x <= 4; $x++) {//this just loops the card and images
+								$imageCount = $x;
+						?>
+							<!--profile result box-->
+							<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+							  <div class="card h-100 border-primary">
+								<div class='card-header'>
+								  <img class='card-img-top rounded' src="app/Views/images/filler_images/<?php echo $imageCount;?>.jpg">
 								</div>
-							</div>
-							
-							<div class="container">
-							  <div class="row">
-								<div class="col-sm">
-									<div class="form-group">
-										<label for="username" class="col-form-label">Country</label> 
-										<div class="col-sm">
-											<input id=" name="" placeholder="" class="form-control here" required="required" type="text">
-										</div>									
-									</div>
-									<div class="form-group">
-										<label for="name" class="col-form-label">Tutor Name</label> 
-										<div class="col-sm">
-											<input id="" name="" placeholder="" class="form-control here" type="text">
-										</div>
-									</div>
-									<div class="form-group">
-										<!--<label for="name" class="col-form-label">Specialty</label>-->
-										<div class="col-sm">
-											<div class="" data-toggle="buttons">
-												<label class="btn btn-lg btn-success active">
-													<input type="radio" name="options" id="option1" autocomplete="off" checked>
-													<i class="fas fa-check"></i>available for children 
-												</label>
-												<label class="btn btn-lg btn-danger">
-													<input type="radio" name="options" id="option2" autocomplete="off">
-													available for children
-												</label>          
-											</div>
-										</div>
-									</div>	
+								<div class='card-body'>
+								  <h4 class='card-title'><a href='$path'>Jane Doe <div class="currency-flag currency-flag-usd"></div></a></h4>
+									<ul class='list-unstyled'>
+									  <li>
+										<span class='badge badge-primary'>Native Speaker</span>
+										<span class='badge badge-success'>TOEIC</span>
+										<span class='badge badge-danger'>For kids</span>
+										<span class='badge badge-warning'>Free Talking</span>
+									  </li>
+									</ul>
+									<p class='card-text'>Lorem ipsum dolor sit amet, ...</p>
 								</div>
-								<div class="col-sm">
-									<div class="form-group">
-										<label for="username" class="col-form-label">sex</label> 
-										<div class="col-sm">
-											<input id=" name="" placeholder="" class="form-control here" required="required" type="text">
-										</div>									
-									</div>
-									<div class="form-group">
-										<label for="username" class="col-form-label">sex</label> 
-										<div class="col-sm">
-											<input id=" name="" placeholder="" class="form-control here" required="required" type="text">
-										</div>									
-									</div>
-									<div class="form-group">
-										<!--<label for="name" class="col-form-label">Specialty</label>-->
-										<div class="col-sm">
-											<div class="" data-toggle="buttons">
-												<label class="btn btn-lg btn-success active">
-													<input type="radio" name="options" id="option1" autocomplete="off" checked>
-													<i class="fas fa-check"></i> Free Talking
-												</label>
-												<label class="btn btn-lg btn-danger">
-													<input type="radio" name="options" id="option2" autocomplete="off">
-													Free Talking
-												</label>          
-											</div>
-										</div>
-									</div>	
-								</div>
-								<div class="col-sm">
-									<div class="form-group">
-										<label for="username" class="col-form-label">age</label> 
-										<div class="col-sm">
-											<input id=" name="" placeholder="" class="form-control here" required="required" type="text">
-										</div>									
-									</div>
-									<div class="form-group">
-										<label for="name" class="col-form-label">Free word</label> 
-										<div class="col-sm">
-											<input id="" name="" placeholder="" class="form-control here" type="text">
-										</div>
-									</div>
-									<div class="form-group">
-										<!--<label for="name" class="col-form-label">Specialty</label>-->
-										<div class="col-sm">
-											<div class="" data-toggle="buttons">
-												<label class="btn btn-lg btn-success active">
-													<input type="radio" name="options" id="option1" autocomplete="off" checked>
-													<i class="fas fa-check"></i> Free reservation
-												</label>
-												<label class="btn btn-lg btn-danger">
-													<input type="radio" name="options" id="option2" autocomplete="off">
-													Free reservation
-												</label>          
-											</div>
-										</div>
-									</div>	
+								<div class='card-footer text-center bg-primary'>
+								  <a href='#' class='btn btn-primary stretched-link'>See more</a>
 								</div>
 							  </div>
 							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="d-flex justify-content-center"><button name="submit" type="submit" class="btn btn-primary">Update My Profile</button></div>
-								</div>
-							</div>
-						</form>
-					</div>
-					
-				</div>
-			</div>
-			<div class="col-md-12">
-				<div class="card">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-12">
-								<h4>Find Tutor</h4>
-								<hr>
-							</div>
+						<?php	
+							} //this just loops the card
+						?>  
+							<!--profile result box-->
 						</div>
-						
-						<div class="container">
-							<div class="row">
-								<div class="card" style="width: 15rem;">
-									<img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg-1024x683.jpg" alt="Card image cap">
-									<div class="card-body">
-										<h5 class="card-title">Card title</h5>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-										<div class="row">	
-											<div class="col-sm">
-												<a title="see profile" href="student_tutor_profile.php" class="btn btn-primary"><i class="fas fa-user"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
 					</div>
 				</div>
 			</div>
-
+		</div>
+    </div>
 <style>
-.btn.active {                
-	display: none;		
-}
-
-.btn span:nth-of-type(1)  {            	
-	display: none;
-}
-.btn span:last-child  {            	
-	display: block;		
-}
-
-.btn.active  span:nth-of-type(1)  {            	
-	display: block;		
-}
-.btn.active span:last-child  {            	
-	display: none;			
-}
 </style>
 <?= $this->endSection() ?>			

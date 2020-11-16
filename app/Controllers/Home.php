@@ -26,6 +26,18 @@ class Home extends BaseController
 	}	
 	public function studentFindTutor(){
 		return view("student/student_find_tutor");
+	}	
+	public function studentClasses(){
+		return view("student/student_my_classes");
+	}	
+	public function studentGroups(){
+		return view("student/student_groups");
+	}	
+	public function studentAccount(){
+		return view("student/student_account");
+	}	
+	public function studentFiles(){
+		return view("student/student_files");
 	}
 	
 

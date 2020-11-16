@@ -39,6 +39,10 @@ $routes->get('tutor', 'Home::tutorDashboard');
 
 $routes->get('student-profile', 'Home::studentProfile');
 $routes->get('student-find-tutor', 'Home::studentFindTutor');
+$routes->get('student-classes', 'Home::studentClasses');
+$routes->get('student-groups', 'Home::studentGroups');
+$routes->get('student-account', 'Home::studentAccount');
+$routes->get('student-files', 'Home::studentFiles');
 
 /**
  * --------------------------------------------------------------------
