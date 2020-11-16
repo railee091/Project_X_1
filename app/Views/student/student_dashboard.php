@@ -63,8 +63,8 @@
 						<div class="card-header">
 							<div class="d-flex justify-content-between align-items-center">
 								<div class="d-flex justify-content-between align-items-center">
-									<div class="mr-2">
-										<img class="rounded-circle" width="45" src="https://pyxis.nymag.com/v1/imgs/357/bbc/cea6584b56451bc29339e57fcf820b3281-30-chris-hemsworth.rsquare.w1200.jpg" alt="">
+									<div class="mr-2 ">
+										<img class="feedImageTutor rounded-circle" width="45"  height="45" src="https://pyxis.nymag.com/v1/imgs/357/bbc/cea6584b56451bc29339e57fcf820b3281-30-chris-hemsworth.rsquare.w1200.jpg" alt="">
 									</div>
 									<div class="ml-2">
 										<div class="h5 m-0">@Chris Hemsworth</div>
@@ -111,11 +111,11 @@
 							<div class="d-flex justify-content-between align-items-center">
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="mr-2">
-										<img class="rounded-circle" width="45" src="https://hairstylesweekly.com/images/2013/11/Natalie-Portman.jpg" alt="">
+										<img class="feedImageStudent rounded-circle" width="45" height="45" src="https://hairstylesweekly.com/images/2013/11/Natalie-Portman.jpg" alt="">
 									</div>
 									<div class="ml-2">
 										<div class="h5 m-0">@Natalie Portman</div>
-										<div class="h7 text-muted">ESL Tutor | Queen of Naboo</div>
+										<div class="h7 text-muted">Student| Queen of Naboo</div>
 									</div>
 								</div>
 								<div>
@@ -172,4 +172,14 @@
 					  </button>
 					</div>
 				</div>
+				<style>
+.feedImageTutor{
+	border-style: solid;
+	border-color: yellowgreen;
+}
+.feedImageStudent{
+	border-style: solid;
+	border-color: Blue;
+}
+</style>
 <?= $this->endSection() ?>

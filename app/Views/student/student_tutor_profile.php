@@ -18,7 +18,7 @@
               <div class="media col-md-10 col-lg-8 col-xl-7 py-5 mx-auto">
                 <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-100 rounded-circle">
                 <div class="media-body ml-5">
-                  <h4 class="font-weight-bold mb-4">Nellie Maxwell</h4>
+                  <h4 class="font-weight-bold mb-4">John Doe</h4>
 
                   <div class="text-muted mb-4">
                     Lorem ipsum dolor sit amet, nibh suavitate qualisque ut nam. Ad harum primis electram duo, porro principes ei has.

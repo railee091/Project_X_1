@@ -4,7 +4,7 @@
 
 <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
 
-		<a href="student_dashboard.php"><img style="width:70%; border-radius: 60%;"src="https://image.kpopmap.com/2018/05/akb48-goto-moe.jpg" alt="Avatar" class="align-middle avatar"></a>
+		<a href="student"><img style="width:70%; border-radius: 60%;"src="https://image.kpopmap.com/2018/05/akb48-goto-moe.jpg" alt="Avatar" class="align-middle avatar"></a>
 
 	<a href="student-profile"><i class="material-icons">spa</i><span class="icon-text"></span>My Profile</a></span>
 	<a href="student-find-tutor"><span><i class="material-icons">info</i><span class="icon-text">Find Tutor</span></a>
