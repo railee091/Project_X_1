@@ -12,12 +12,13 @@
 					<i class="fa fa-home"></i>Home
 					<span class="sr-only">(current)</span>
 				</a>
-		  </li>
+			</li>
+		  <!--
 		  <li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			  <i class="fa fa-envelope-o">
 				<span class="badge badge-primary">11</span>
-			  </i>Test
+			  </i>Messages
 			</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 			  <a class="dropdown-item" href="#">Action</a>
@@ -25,23 +26,29 @@
 			  <div class="dropdown-divider"></div>
 			  <a class="dropdown-item" href="#">Something else here</a>
 			</div>
-		  </li>
+		  </li>-->
+		  <li class="nav-item">
+				<a class="nav-link" href="#" data-toggle="modal" data-target="#messageModal">
+					<i class="fa fa-envelope-o">
+					<span class="badge badge-primary">11</span></i>Mail
+				</a>
+			</li>
 		</ul>
 		<ul class="navbar-nav ">
 		  <li class="nav-item">
-			<a class="nav-link" href="#">
+			<a class="nav-link" href="#" data-toggle="modal" data-target="#notificationModal">
 			  <i class="fa fa-bell">
 				<span class="badge badge-info">11</span>
 			  </i>
-			  Test
+			  Notifications
 			</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="#">
-			  <i class="fa fa-globe">
-				<span class="badge badge-success">11</span>
+			<a class="nav-link" href="#" data-toggle="modal" data-target="#creditsModal">
+			  <i class="fa fa-usd">
+				<!--<span class="badge badge-success">11</span>-->
 			  </i>
-			  Test
+			  credits
 			</a>
 		  </li>
 		</ul>
@@ -55,6 +62,66 @@
 </br>
 </br>
 </br>
+<!-- Modal messages -->
+<div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Messages</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal notification -->
+<div class="modal fade" id="notificationModal" tabindex="-1" role="dialog" aria-labelledby="notificationModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Notifications<h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Credits -->
+<div class="modal fade" id="creditsModal" tabindex="-1" role="dialog" aria-labelledby="creditsModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Credits<h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 <style> 
 .navbartop{
 	  overflow: hidden;
