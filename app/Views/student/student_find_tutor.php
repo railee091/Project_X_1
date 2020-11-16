@@ -32,7 +32,7 @@
                                 <div class="form-group ">
 									<label for="gender"><b>Gender:</b></label>
                                     <select id="gender" class="form-control" >
-                                        <option selected>Unspecified<option>
+                                        <option selected>Unspecified</option>
                                         <option>Female</option>
                                         <option>Male</option>
                                     </select>
