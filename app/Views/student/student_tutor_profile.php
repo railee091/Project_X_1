@@ -153,6 +153,32 @@
                     </a>
                   </div>-->
                 </div>
+                <div class="card mb-4">
+                  <div class="card-body">
+					<div class="row mb-2">
+						<div class="col-md-12 text-muted">Schedule:</div>
+						<!-- Grid column -->
+						<div class="col-lg-4 col-md-12 mb-4">
+							
+						</div>
+					  <!-- Grid column -->
+					</div>
+                  </div><!--
+                  <div class="card-footer">
+                    <a href="javascript:void(0)" class="d-inline-block text-muted">
+                      <small class="align-middle">
+                        <strong>123</strong> Likes</small>
+                    </a>
+                    <a href="javascript:void(0)" class="d-inline-block text-muted ml-3">
+                      <small class="align-middle">
+                        <strong>12</strong> Comments</small>
+                    </a>
+                    <a href="javascript:void(0)" class="d-inline-block text-muted ml-3">
+                      <i class="ion ion-md-share align-middle"></i>&nbsp;
+                      <small class="align-middle">Repost</small>
+                    </a>
+                  </div>-->
+                </div>
                 <!-- / Posts -->
 
               </div>
