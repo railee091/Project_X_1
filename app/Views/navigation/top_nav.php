@@ -66,18 +66,282 @@
 <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModal" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Messages</h5>
+      <div class="modal-header  bg-primary ">
+        <div class="card-body text-white mailbox-widget pb-0"><!-- inside this is code for tab -->
+			<ul class="nav nav-tabs custom-tab border-bottom-0 mt-4" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="inbox-tab" data-toggle="tab" aria-controls="inbox" href="#inbox" role="tab" aria-selected="true">
+						<span class="d-block d-md-none"><i class="ti-email"></i></span>
+						<span class="d-none d-md-block"> INBOX</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="sent-tab" data-toggle="tab" aria-controls="sent" href="#sent" role="tab" aria-selected="false">
+						<span class="d-block d-md-none"><i class="ti-export"></i></span>
+						<span class="d-none d-md-block">SENT</span>
+					</a>
+				</li>
+				<li class="nav-item ml-auto">
+					<a class="nav-link" id="compose-tab" data-toggle="tab" aria-controls="compose" href="#compose" role="tab" aria-selected="false">
+						<button class="btn btn-circle btn-success text-white">
+							<i class="fa fa-plus"></i>
+						</button>
+						<span class="ml-2 font-normal">Compose</span>
+					</a>
+				</li>
+			</ul>
+		</div><!--end code for tab -->
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
+      <div class="modal-body"><!-- inside this is code for inbox -->
+        <div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade active show" id="inbox" aria-labelledby="inbox-tab" role="tabpanel">
+								<div>
+									<div class="row p-4 no-gutters align-items-center">
+										<div class="col-sm-12 col-md-6">
+											<h3 class="font-light mb-0"><i class="ti-email mr-2"></i>11 Unread Messages</h3>
+										</div>
+										<div class="col-sm-12 col-md-6">
+											<ul class="list-inline dl mb-0 float-left float-md-right">
+												<li class="list-inline-item text-danger">
+													
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- Mail list-->
+									<div class="table-responsive">
+										<table class="table email-table no-wrap table-hover v-middle mb-0 font-14">
+											<tbody>
+												<!-- row -->
+												<tr>
+													<!-- label -->
+													<td class="pl-3">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="cst1" />
+															<label class="custom-control-label" for="cst1">&nbsp;</label>
+														</div>
+													</td>
+													<!-- star -->
+													<td><i class="fa fa-star text-warning"></i></td>
+													<td>
+														<span class="mb-0 text-muted">Admin</span>
+													</td>
+													<!-- Message -->
+													<td>
+														<a class="link" href="javascript: void(0)">
+															<span class="badge badge-pill text-white font-medium badge-danger mr-2">System</span>
+															<span class="text-dark">Maintenance Notice</span>
+														</a>
+													</td>
+													<!-- Attachment -->
+													<td><i class="fa fa-paperclip text-muted"></i></td>
+													<!-- Time -->
+													<td class="text-muted">May 13</td>
+													<td class="text-muted">
+														<a href="#">
+															<button class="btn btn-circle btn-danger text-white" href="javascript:void(0)">
+																<i class="fa fa-trash"></i>
+															</button>
+														</a>
+													</td>
+												</tr>
+												<!-- row -->
+												<tr>
+													<!-- label -->
+													<td class="pl-3">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="cst2" />
+															<label class="custom-control-label" for="cst2">&nbsp;</label>
+														</div>
+													</td>
+													<!-- star -->
+													<td><i class="fa fa-star"></i></td>
+													<!-- User -->
+													<td>
+														<span class="mb-0 text-muted">Jane Doe</span>
+													</td>
+													<!-- Message -->
+													<td>
+														<a class="link" href="javascript: void(0)">
+															<span class="badge badge-pill text-white font-medium badge-info mr-2">Tutor</span>
+															<span class="text-dark">Additional Notes</span>
+														</a>
+													</td>
+													<!-- Attachment -->
+													<td><i class="fa fa-paperclip text-muted"></i></td>
+													<!-- Time -->
+													<td class="text-muted">May 13</td>
+													<td class="text-muted">
+														<a href="#">
+															<button class="btn btn-circle btn-danger text-white" href="javascript:void(0)">
+																<i class="fa fa-trash"></i>
+															</button>
+														</a>
+													</td>
+												</tr>
+												<!-- row -->
+												<tr>
+													<!-- label -->
+													<td class="pl-3">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="cst3" />
+															<label class="custom-control-label" for="cst3">&nbsp;</label>
+														</div>
+													</td>
+													<!-- star -->
+													<td><i class="fa fa-star text-warning"></i></td>
+													<!-- User -->
+													<td class="user-name max-texts">
+														<span class="mb-0 text-muted font-light">Jane Doe</span>
+													</td>
+													<!-- Message -->
+													<td>
+														<a class="link" href="javascript: void(0)">
+															<span class="badge badge-pill text-white font-medium badge-warning mr-2">Groups</span>
+															<span class="font-light text-dark">Class notes</span>
+														</a>
+													</td>
+													<!-- Attachment -->
+													<td><i class="fa fa-paperclip text-muted"></i></td>
+													<!-- Time -->
+													<td class="text-muted font-light">May 13</td>
+													<td class="text-muted">
+														<a href="#">
+															<button class="btn btn-circle btn-danger text-white" href="javascript:void(0)">
+																<i class="fa fa-trash"></i>
+															</button>
+														</a>
+													</td>
+												</tr>
+												<!-- row -->
+												<tr class="">
+													<!-- label -->
+													<td class="pl-3">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="cst5" />
+															<label class="custom-control-label" for="cst5">&nbsp;</label>
+														</div>
+													</td>
+													<!-- star -->
+													<td><i class="fa fa-star"></i></td>
+													<!-- User -->
+													<td>
+														<span class="mb-0 text-muted font-light">Admin</span>
+													</td>
+													<!-- Message -->
+													<td>
+														<a class="link" href="javascript: void(0)">
+															<span class="badge badge-pill text-white font-medium badge-success mr-2">System</span>
+															<span class="font-light text-dark">Account credits</span>
+														</a>
+													</td>
+													<!-- Attachment -->
+													<td><i class="fa fa-paperclip text-muted"></i></td>
+													<!-- Time -->
+													<td class="text-muted font-light">Mar 10</td>
+													<td class="text-muted">
+														<a href="#">
+															<button class="btn btn-circle btn-danger text-white" href="javascript:void(0)">
+																<i class="fa fa-trash"></i>
+															</button>
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="sent" aria-labelledby="sent-tab" role="tabpanel">
+								<div>
+									<div class="row p-4 no-gutters align-items-center">
+										<div class="col-sm-12 col-md-6">
+											<h3 class="font-light mb-0"><i class="ti-email mr-2"></i>2 Sent tems</h3>
+										</div>
+									</div>
+									<!-- Mail list-->
+									<div class="table-responsive">
+										<table class="table email-table no-wrap table-hover v-middle mb-0 font-14">
+											<tbody>
+												<!-- row -->
+												<tr>
+													<!-- label -->
+													<td class="pl-3">
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="cst2" />
+															<label class="custom-control-label" for="cst2">&nbsp;</label>
+														</div>
+													</td>
+													<!-- star -->
+													<td><i class="fa fa-star"></i></td>
+													<!-- User -->
+													<td>
+														<span class="mb-0 text-muted">Jane Does</span>
+													</td>
+													<!-- Message -->
+													<td>
+														<a class="link" href="javascript: void(0)">
+															<span class="badge badge-pill text-white font-medium badge-info mr-2">Tutor</span>
+															<span class="text-dark">Thank you teacher</span>
+														</a>
+													</td>
+													<!-- Attachment -->
+													<td><i class="fa fa-paperclip text-muted"></i></td>
+													<!-- Time -->
+													<td class="text-muted">May 13</td>
+													<td class="text-muted">
+														<a href="#">
+															<button class="btn btn-circle btn-danger text-white" href="javascript:void(0)">
+																<i class="fa fa-trash"></i>
+															</button>
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="compose" aria-labelledby="compose-tab" role="tabpanel">
+								<p class="text-center">New Message</p>
+								<form>
+									<div class="form-row mb-3">
+										<label for="to" class="col-2 col-sm-1 col-form-label">To:</label>
+										<div class="col-10 col-sm-11">
+											<input type="email" class="form-control" id="to" placeholder="Type name">
+										</div>
+									</div>
+									<div class="form-row mb-3">
+										<label for="bcc" class="col-2 col-sm-1 col-form-label">Subject:</label>
+										<div class="col-10 col-sm-11">
+											<input type="text" class="form-control" id="bcc" placeholder="Subject...">
+										</div>
+									</div>
+									
+									<div class="form-group mt-4">
+										<textarea class="form-control" id="message" name="body" rows="12" placeholder="Click here to reply"></textarea>
+									</div>
+									<div class="form-group">
+										<button type="submit" class="btn btn-success">Send</button>
+										<button type="submit" class="btn btn-danger">Discard</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+      </div><!-- end code for inbox -->
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -131,5 +395,38 @@
 	  padding-right:120px;
 	  width: 100%; /* Full width */
 	  z-index:1;
+}
+/* css for inbox modal */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: 0;
+}
+.mailbox-widget .custom-tab .nav-item .nav-link {
+    border: 0;
+    color: #fff;
+    border-bottom: 3px solid transparent;
+}
+.mailbox-widget .custom-tab .nav-item .nav-link.active {
+    background: 0 0;
+    color: #fff;
+    border-bottom: 3px solid #2cd07e;
+}
+.no-wrap td, .no-wrap th {
+    white-space: nowrap;
+}
+.table td, .table th {
+    padding: .9375rem .4rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(120,130,140,.13);
+}
+.font-light {
+    font-weight: 300;
 }
 </style> 
