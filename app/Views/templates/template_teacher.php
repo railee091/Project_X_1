@@ -9,6 +9,8 @@
     <title>Teacher's Dashboard</title>
 	<!-- Bootstrap CSS -->
 	<link href="app/views/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
 	<!-- Bootstrap core JavaScript -->
 	<script src="app/views/assets/jquery/jquery.min.js"></script> <!--qjeury-->
 	<script src="app/views/assets/bootstrap/js/bootstrap.bundle.min.js"></script> <!--bootsrap js-->
