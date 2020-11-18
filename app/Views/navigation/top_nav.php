@@ -366,19 +366,152 @@
     </div>
   </div>
 </div>
+
 <!-- Modal Credits -->
 <div class="modal fade" id="creditsModal" tabindex="-1" role="dialog" aria-labelledby="creditsModal" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Credits<h5>
+      <div class="modal-header bg-primary">
+        <div class="card-body text-white mailbox-widget pb-0"><!-- inside this is code for tab -->
+			<ul class="nav nav-tabs custom-tab border-bottom-0 mt-4" id="myTab2" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="account-tab" data-toggle="tab" aria-controls="account" href="#account" role="tab" aria-selected="true">
+						<span class="d-block d-md-none"><i class="ti-email"></i></span>
+						<span class="d-none d-md-block"> ACCOUNT(teacher)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="creditsTeacher-tab" data-toggle="tab" aria-controls="creditsTeacher" href="#creditsTeacher" role="tab" aria-selected="false">
+						<span class="d-block d-md-none"><i class="ti-export"></i></span>
+						<span class="d-none d-md-block">CREDITS(teacher)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="creditsStudent-tab" data-toggle="tab" aria-controls="creditsStudent" href="#creditsStudent" role="tab" aria-selected="false">
+						<span class="d-block d-md-none"><i class="ti-export"></i></span>
+						<span class="d-none d-md-block">CREDITS(student)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="buyCreditsStudent-tab" data-toggle="tab" aria-controls="buyCreditsStudent" href="#buyCreditsStudent" role="tab" aria-selected="false">
+						<span class="d-block d-md-none"><i class="ti-export"></i></span>
+						<span class="d-none d-md-block">BUY CREDITS(student)</span>
+					</a>
+				</li>
+			</ul>
+		</div><!--end code for tab -->
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
+      <div class="modal-body"><!--account-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="tab-content" id="myTabContent2">
+							<div class="tab-pane fade active show" id="account" aria-labelledby="account-tab" role="tabpanel">
+								<p class="text-center"></p>
+								<form action="#">
+								  <div class="form-group">
+									<label for="exampleFormControlSelect1">Beneficiary Bank</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+									  <option>PNB</option>
+									  <option>BPI</option>
+									</select>
+								  </div>
+								  <div class="form-group">
+									<label for="pwd">Taxpayer Identification Number (TIN):</label>
+									<input type="text" class="form-control" id="pwd">
+								  </div>
+								  <div class="form-group">
+									<label for="pwd">Account Number:</label>
+									<input type="text" class="form-control" id="pwd">
+								  </div>
+								  <div class="form-group">
+									<label for="pwd">First Name:</label>
+									<input type="text" class="form-control" id="pwd">
+								  </div>
+								  <div class="form-group">
+									<label for="pwd">Middle Name:</label>
+									<input type="text" class="form-control" id="pwd">
+								  </div>
+								  <div class="form-group">
+									<label for="pwd">Last Name:</label>
+									<input type="text" class="form-control" id="pwd">
+								  </div>
+								  <button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="creditsTeacher" aria-labelledby="creditsTeacher-tab" role="tabpanel">
+								<table class="table">
+									<thead>
+									  <tr>
+										<th>Fees</th>
+										<th>Quantity</th>
+										<th>Amount</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td><i>Lessons</i></td>
+										<td>6</td>
+										<td>600</td>
+									  </tr>
+									  <tr>
+										<td><i>Late Cancellation</i></td>
+										<td>1</td>
+										<td>80</td>
+									  </tr>
+									  <tr>
+										<td><i>Early Cancellation</i></td>
+										<td>1</td>
+										<td>50</td>
+									  </tr>
+									  <tr>
+										<td><i>Processing Fees</i></td>
+										<td></td>
+										<td>-25</td>
+									  </tr>
+									  <tr>
+										<td><i>Incentives</i></td>
+										<td></td>
+										<td>200</td>
+									  </tr>
+										<td><i>Total</i></td>
+										<td></td>
+										<td><b><i>905</i></b></td>
+									  </tr>
+									</tbody>
+								  </table>
+							</div>
+							<div class="tab-pane fade" id="creditsStudent" aria-labelledby="creditsStudent-tab" role="tabpanel">
+								<table class="table">
+									<thead>
+									  <tr>
+										<th>Credits</th>
+										<th>Amount</th>
+										<th>Equivalent</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td><i></i></td>
+										<td>4000pts</td>
+										<td>4000php</td>
+									  </tr>
+									</tbody>
+								 </table>
+							</div>
+							<div class="tab-pane fade" id="buyCreditsStudent" aria-labelledby="buyCreditsStudent-tab" role="tabpanel">
+								<?php require "app/views/payment/payment.php"; ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+      </div><!--end account-->
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>

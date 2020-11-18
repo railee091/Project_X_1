@@ -9,6 +9,7 @@
     <title>Student's Dashboard</title>
 	<!-- Bootstrap CSS -->
 	<link href="app/views/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
 	
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/currency-flags/3.1.0/currency-flags.min.css" integrity="sha512-Wkhct6IAtCCUAowu5lwS/XQb0zEHF4pCKnEk0Hrn3B8Y6Kd9hRADpP5/hmFOPhqjJGjec8/N0ogdAAOWxYW/Nw==" crossorigin="anonymous" />
 	<!-- Bootstrap core JavaScript -->
