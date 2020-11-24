@@ -60,68 +60,7 @@
   right: 0rem;
   position: absolute;
 }
-.app_page1 {
-  margin: 0;
-  overflow: hidden;
-  height:100%;
-}
 
-@media (min-width: 768px){
-  #left {
-    position: absolute;
-    top: 5rem;
-    bottom: 0;
-    left: 5rem;
-    width: 25%;
-    overflow-y: scroll; 
-  }
-
-  #middle {
-    position: absolute;
-    top: 5rem;
-    bottom: 0;
-    left: 15%;
-    width: 15%;
-    overflow-y: scroll; 
-  }
-  
-  #right {
-    position: absolute;
-    top: 5rem;
-    bottom: 0;
-    right: 0;
-    overflow-y: scroll;
-    width: 70%;
-  }
-}
-
-#left {
-  background-color: #FC6E51;
-  text-align: center;
-  height:100%;
-}
-
-#middle{
-  background-color: lightgreen;
-  text-align: center;
-  height:100%;
-}
-
-#right {
-  height:100%;
-  background-color: #4FC1E9;
-  text-align: center;
-}
-
-h4{
-  padding: 10px 0; 
-}
-
-.tool-card{
-  border: 2px solid black;
-  padding: 10px 10px;
-  margin: 10px 0;
-}
 </style>
 
 	
