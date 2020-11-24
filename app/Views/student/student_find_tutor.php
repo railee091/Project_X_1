@@ -1,8 +1,8 @@
 <?= $this->extend('templates/template_student') ?>
 
 <?= $this->section('content') ?>
-		<div class="container">
-        <div class="row">
+	<div class="container column-bg">
+    	<div class="row" ><!-- search area (upper) -->
             <div class="col-md-12">
                 <div class="card acik-renk-form">
                     <div class="card-body">
@@ -104,8 +104,10 @@
 
             </div>
         </div>
+
 		<br/>
-		<div class="row">
+		
+		<div class="row"><!-- search result (lower) -->
             <div class="col-md-12">
                 <div class="card acik-renk-form">
                     <div class="card-body">
@@ -145,8 +147,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-    </div>
+		</div>    
+    </div>	
 <style>
 </style>
 <?= $this->endSection() ?>			

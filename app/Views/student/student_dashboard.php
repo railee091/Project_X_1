@@ -5,7 +5,7 @@
 					
 				</div>
 				
-				<div class="col-md-6 gedf-main">
+				<div class="col-md-6 gedf-main column-bg">
 					<!--- \\\\\\\Post-->
 					<div class="card gedf-card">
 						<div class="card-header">
