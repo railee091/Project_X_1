@@ -1,62 +1,197 @@
 <?= $this->extend('templates/template_student') ?>
 
 <?= $this->section('content') ?>
-				<div class="container"><br/>
-					<div class="row">
-						<div class="col-md-3">
-							<a href="student"><button type="button" class="btn btn-primary">BACK</button></a>
-						</div>
-					</div><br/>
-					<div class="row">
-						<div class="col-md-3">
-							<!-- Tabs nav -->
-							<div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-								<a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-									<i class="fa fa-user-circle-o mr-2"></i>
-									<span class="font-weight-bold small text-uppercase">Class Analytics</span></a>
-
-								<a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-									<i class="fa fa-calendar-minus-o mr-2"></i>
-									<span class="font-weight-bold small text-uppercase">Bookings</span></a>
-
-								<a class="nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-									<i class="fa fa-star mr-2"></i>
-									<span class="font-weight-bold small text-uppercase">Your Reviews</span></a>
-
-								<a class="nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-									<i class="fa fa-check mr-2"></i>
-									<span class="font-weight-bold small text-uppercase">Finished Bookings</span></a>
+				<div class="col-md-3">
+					<div class="card">
+						<article class="card-group-item">
+							<header class="card-header"><h6 class="title">Category </h6></header>
+							<div class="filter-content">
+								<div class="list-group list-group-flush">
+								  <a href="#" class="list-group-item">Groups<span class="float-right badge badge-light round">142</span> </a>
+								  <a href="#" class="list-group-item">Following<span class="float-right badge badge-light round">3</span>  </a>
+								  <a href="#" class="list-group-item">Public<span class="float-right badge badge-light round">32</span>  </a>
+								  <a href="#" class="list-group-item">Announcement<span class="float-right badge badge-light round">12</span>  </a>
+								</div>  <!-- list-group .// -->
 							</div>
+						</article> <!-- card-group-item.// -->
+					</div> <!-- card.// -->
+				</div>
+				
+				<div class="col-md-6 gedf-main column-bg">
+					<!--- \\\\\\\Post-->
+					<div class="card gedf-card">
+						<div class="card-header">
+							<ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab" aria-controls="posts" aria-selected="true">Make
+										a publication</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="images-tab" data-toggle="tab" role="tab" aria-controls="images" aria-selected="false" href="#images">Images</a>
+								</li>
+							</ul>
 						</div>
-						<div class="col-md-8">
-							<!-- Tabs content -->
-							<div class="tab-content" id="v-pills-tabContent">
-								<div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-									<h4 class=" mb-4">Class Analytics</h4>
-									<p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									<p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="card-body">
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+									<div class="form-group">
+										<label class="sr-only" for="message">post</label>
+										<textarea class="form-control" id="message" rows="3" placeholder="What are you thinking?"></textarea>
+									</div>
+
 								</div>
-								
-								<div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-									<h4 class=" mb-4">Bookings</h4>
-									<p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									<p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
+									<div class="form-group">
+										<div class="custom-file">
+											<input type="file" class="custom-file-input" id="customFile">
+											<label class="custom-file-label" for="customFile">Upload image</label>
+										</div>
+									</div>
+									<div class="py-4"></div>
 								</div>
-								
-								<div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-									<h4 class=" mb-4">Reviews</h4>
-									<p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									<p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="btn-toolbar justify-content-between">
+								<div class="btn-group">
+									<button type="submit" class="btn btn-primary">share</button>
 								</div>
-								
-								<div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-									<h4 class=" mb-4">Classes you have taken</h4>
-									<p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									<p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<div class="btn-group">
+									<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<i class="fa fa-globe"></i> Public
+									</button>
+									<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+										<a class="dropdown-item" href="#"><i class="fa fa-globe"></i> Public</a>
+										<a class="dropdown-item" href="#"><i class="fa fa-users"></i> Friends</a>
+										<a class="dropdown-item" href="#"><i class="fa fa-user"></i> Just me</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+					<!-- Post /////-->
+					<br/>
+					<!--- \\\\\\\Post-->
+					<div class="card gedf-card">
+						<div class="card-header">
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="mr-2 ">
+										<img class="feedImageTutor rounded-circle" width="45"  height="45" src="https://pyxis.nymag.com/v1/imgs/357/bbc/cea6584b56451bc29339e57fcf820b3281-30-chris-hemsworth.rsquare.w1200.jpg" alt="">
+									</div>
+									<div class="ml-2">
+										<div class="h5 m-0">@Chris Hemsworth</div>
+										<div class="h7 text-muted">ESL Tutor | God of Thunder</div>
+									</div>
+								</div>
+								<div>
+									<div class="dropdown">
+										<button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-ellipsis-h"></i>
+										</button>
+										<div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+											<div class="h6 dropdown-header">Configuration</div>
+											<a class="dropdown-item" href="#">unfollow</a>
+											<a class="dropdown-item" href="#">Hide</a>
+											<a class="dropdown-item" href="#">Report</a>
+										</div>
+									</div>
+								</div>
+							</div>
 
-<?= $this->endSection() ?>			
+						</div>
+						<div class="card-body">
+							<div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+							<a class="card-link" href="#">
+								<h5 class="card-title">The Guardians need a Leader.</h5>
+							</a>
+
+							<p class="card-text">
+								The Rabbit Is Correct, And Clearly The Smartest One Among You.
+							</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+							<a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+							<a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+						</div>
+					</div>
+					<!-- Post /////-->
+					<br/>
+					<!--- \\\\\\\Post-->
+					<div class="card gedf-card">
+						<div class="card-header">
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="mr-2">
+										<img class="feedImageStudent rounded-circle" width="45" height="45" src="https://hairstylesweekly.com/images/2013/11/Natalie-Portman.jpg" alt="">
+									</div>
+									<div class="ml-2">
+										<div class="h5 m-0">@Natalie Portman</div>
+										<div class="h7 text-muted">Student| Queen of Naboo</div>
+									</div>
+								</div>
+								<div>
+									<div class="dropdown">
+										<button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-ellipsis-h"></i>
+										</button>
+										<div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+											<div class="h6 dropdown-header">Configuration</div>
+											<a class="dropdown-item" href="#">unfollow</a>
+											<a class="dropdown-item" href="#">Hide</a>
+											<a class="dropdown-item" href="#">Report</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="card-body">
+							<div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+							<a class="card-link" href="#">
+								<h5 class="card-title">The Senator Palpatine Dilemma</h5>
+							</a>
+
+							<p class="card-text">
+								Senator, this is your arena. I feel I must return my mine. I have decided to go back to Naboo.
+							</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+							<a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+							<a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+						</div>
+					</div>
+					<!-- Post /////-->
+				</div>
+				<div class="col-md-3">
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+					  <strong>System Upgrade!</strong> System has been updated to latest version
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="alert alert-primary alert-dismissible fade show" role="alert">
+					  <strong>Reminder!</strong> Halloween event for all.
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="alert alert-dark alert-dismissible fade show" role="alert">
+					  <strong>Admin Message!</strong> Profile UI updated
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+				</div>
+				<style>
+.feedImageTutor{
+	border-style: solid;
+	border-color: yellowgreen;
+}
+.feedImageStudent{
+	border-style: solid;
+	border-color: Blue;
+}
+</style>
+<?= $this->endSection() ?>
