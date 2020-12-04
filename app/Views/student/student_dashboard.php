@@ -2,7 +2,19 @@
 
 <?= $this->section('content') ?>
 				<div class="col-md-3">
-					
+					<div class="card">
+						<article class="card-group-item">
+							<header class="card-header"><h6 class="title">Category </h6></header>
+							<div class="filter-content">
+								<div class="list-group list-group-flush">
+								  <a href="#" class="list-group-item">Groups<span class="float-right badge badge-light round">142</span> </a>
+								  <a href="#" class="list-group-item">Following<span class="float-right badge badge-light round">3</span>  </a>
+								  <a href="#" class="list-group-item">Public<span class="float-right badge badge-light round">32</span>  </a>
+								  <a href="#" class="list-group-item">Announcement<span class="float-right badge badge-light round">12</span>  </a>
+								</div>  <!-- list-group .// -->
+							</div>
+						</article> <!-- card-group-item.// -->
+					</div> <!-- card.// -->
 				</div>
 				
 				<div class="col-md-6 gedf-main column-bg">
