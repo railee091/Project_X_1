@@ -7,11 +7,24 @@
 							<header class="card-header"><h6 class="title">Category </h6></header>
 							<div class="filter-content">
 								<div class="list-group list-group-flush">
-								  <a href="#" class="list-group-item">Classes<span class="float-right badge badge-light round">5</span> </a>
-								  <a href="#" class="list-group-item">Tutors<span class="float-right badge badge-light round">3</span>  </a>
-								  <a href="#" class="list-group-item">History<span class="float-right badge badge-light round">32</span>  </a>
-								  <a href="#" class="list-group-item">Files<span class="float-right badge badge-light round">12</span>  </a>
-								</div>  <!-- list-group .// -->
+									<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+									  	<a class="list-group-item nav-link active" id="v-pills-classes-tab" data-toggle="pill" href="#v-pills-classes" role="tab" aria-controls="v-pills-classes" aria-selected="true">
+									  	Classes<span class="float-right badge badge-light round">5</span> 
+									  	</a>
+
+									  	<a class="list-group-item nav-link" id="v-pills-tutor-tab" data-toggle="pill" href="#v-pills-tutor" role="tab" aria-controls="v-pills-tutor" aria-selected="false">
+									 	Tutors<span class="float-right badge badge-light round">3</span>  
+										</a>
+
+									  	<a class="list-group-item nav-link" id="v-pills-history-tab" data-toggle="pill" href="#v-pills-history" role="tab" aria-controls="v-pills-history" aria-selected="false">
+									  	History<span class="float-right badge badge-light round">32</span>  
+									  	</a>
+
+									  	<a class="list-group-item nav-link" id="v-pills-files-tab" data-toggle="pill" href="#v-pills-files" role="tab" aria-controls="v-pills-files" aria-selected="false">
+									  	Files<span class="float-right badge badge-light round">12</span>  
+									  	</a>
+									</div>
+								</div> 
 							</div>
 						</article> <!-- card-group-item.// -->
 					</div> <!-- card.// -->
@@ -21,40 +34,56 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-12">
-								<ul class="event-list">
-									<?php  
-										for ($x = 0; $x <= 4; $x++) {//this just loops the list item
-											$imageCount = $x;
-									?>
-									<li>
-										<time datetime="2014-07-20 2000">
-											<span class="day">20</span>
-											<span class="month">Jan</span>
-											<span class="year">2021</span>
-											<span class="time">8:00 PM</span>
-										</time>
-										<img alt="My 24th Birthday!" src="https://i.pinimg.com/originals/bd/b0/40/bdb0409f08d0ffd8bc732f4110cc6ad9.jpg" />
-										<div class="info">
-											<h2 class="title">Booked class</h2>
-											<p class="desc">You have a class with Teacher Jane Doe on July 20, 2021 (wednesday) at 8:00pm</p>
-											<ul>
-												<li style="width:33%;">1</li>
-												<li style="width:34%;">2</span></li>
-												<li style="width:33%;"><span class="fa fa-envelope"></span></li>
-											</ul>
-										</div>
-										<div class="social">
-											<ul>
-												<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-address-card" title="Tutor Profile"></span></a></li>
-												<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-history" title="Class History"></span></a></li>
-												<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-window-close" title="Cancel Class"></span></a></li>
-											</ul>
-										</div>
-									</li>
-									<?php	
-										} //this just loops the list item
-									?> 
-								</ul>
+								<div class="tab-content" id="v-pills-tabContent">
+								  	<div class="tab-pane fade show active" id="v-pills-classes" role="tabpanel" aria-labelledby="v-pills-home-tab">
+									  	<ul class="event-list">
+											<?php  
+												for ($x = 0; $x <= 4; $x++) {//this just loops the list item
+													$imageCount = $x;
+											?>
+											<li>
+												<time datetime="2014-07-20 2000">
+													<span class="day">20</span>
+													<span class="month">Jan</span>
+													<span class="year">2021</span>
+													<span class="time">8:00 PM</span>
+												</time>
+												<img alt="My 24th Birthday!" src="https://i.pinimg.com/originals/bd/b0/40/bdb0409f08d0ffd8bc732f4110cc6ad9.jpg" />
+												<div class="info">
+													<h2 class="title">Booked class</h2>
+													<p class="desc">You have a class with Teacher Jane Doe on July 20, 2021 (wednesday) at 8:00pm</p>
+													<ul>
+														<li style="width:33%;">1</li>
+														<li style="width:34%;">2</span></li>
+														<li style="width:33%;"><span class="fa fa-envelope"></span></li>
+													</ul>
+												</div>
+												<div class="social">
+													<ul>
+														<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-address-card" title="Tutor Profile"></span></a></li>
+														<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-history" title="Class History"></span></a></li>
+														<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-window-close" title="Cancel Class"></span></a></li>
+													</ul>
+												</div>
+											</li>
+											<?php	
+												} //this just loops the list item
+											?> 
+										</ul>
+								  	</div>
+
+								  	<div class="tab-pane fade" id="v-pills-tutor" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+								  		<h1>tutor</h1>
+								  	</div>
+
+								  	<div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+								  		<h1>history</h1>
+								  	</div>
+
+								  	<div class="tab-pane fade" id="v-pills-files" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+								  		<h1>files</h1>
+								  	</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -80,10 +109,12 @@
 					</div>-->
 				</div>
 <style>
-
+	.list-group-item.active{
+		z-index: 0;
+	}
     .center-column {
 		padding: 60px 0px;
-		background-color: rgb(220, 220, 220);
+		/**background-color: rgb(220, 220, 220);**/
 	}
     
     .event-list {
