@@ -44,7 +44,7 @@
 							?>
 							<li>
 								<time datetime="2014-07-20 2000">
-									<span class="day">20</span>
+									<span class="day">2<?php echo $imageCount;?></span>
 									<span class="month">Jan</span>
 									<span class="year">2021</span>
 									<span class="time">8:00 PM</span>
@@ -61,9 +61,9 @@
 								</div>
 								<div class="social">
 									<ul>
-										<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-address-card" title="Tutor Profile"></span></a></li>
-										<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-history" title="Class History"></span></a></li>
-										<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-window-close" title="Cancel Class"></span></a></li>
+										<li class="facebook" style="width:33%;"><a href="#"><span class="fa fa-address-card" title="Tutor Profile"></span></a></li>
+										<li class="twitter" style="width:34%;"><a href="#"><span class="fa fa-history" title="Class History"></span></a></li>
+										<li class="google-plus" style="width:33%;"><a href="#"><span class="fa fa-window-close" title="Cancel Class"></span></a></li>
 									</ul>
 								</div>
 							</li>
