@@ -37,6 +37,11 @@
 				<div class="tab-content" id="v-pills-tabContent">
 					<!--classes tab-->
 				  	<div class="tab-pane fade show active" id="v-pills-classes" role="tabpanel" aria-labelledby="v-pills-home-tab">
+						<!--h6 is just a comment, it can be deleted-->
+						<div class="alert alert-success">
+							<h6><b>For Student</b>: Tutors Image and links</h6>
+					  		<h6><b>For Tutor</b>: Students Image and links</h6>
+					  	</div>
 					  	<ul class="event-list">
 							<?php  
 								for ($x = 0; $x <= 4; $x++) {//this just loops the list item
@@ -76,13 +81,21 @@
 
 				  	<!--tutor tab-->
 				  	<div class="tab-pane fade" id="v-pills-tutor" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-				  		<h1>Show Tutors that you already had a class with.</h1>
+				  		<!--h6 is just a comment, it can be deleted-->
+				  		<div class="alert alert-success">
+				  			<h6><b>For Student</b>: Show Tutors that you already had a class with and statistics.</h6>
+				  			<h6><b>For Tutor</b>: Show Students that you already had a class with and statistics.</h6>
+				  		</div>
 				  	</div>
 				  	<!--tutor tab end-->
 
 				  	<!--history tab -->
 				  	<div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-				  		<h4>Show classes you have taken / canceled</h4>
+				  		<!--h6 is just a comment, it can be deleted-->
+				  		<div class="alert alert-success">
+				  			<h6><b>For Student</b>: Show classes you have Booked / canceled</h6>
+				  			<h6><b>For Tutor</b>: Show classes you have completed / canceled with student</h6>
+				  		</div>
 				  		<!--completed class-->
 				  		<div class="card border">
 						  	<div class="card-header">
@@ -133,7 +146,7 @@
 							  			
 							  		</div>
 							  		<div class="col-sm-3">
-							  			55 credits
+							  			<b>55 credits</b>
 							  		</div>
 							  	</div>
 							</div>
@@ -190,12 +203,12 @@
 							  			
 							  		</div>
 							  		<div class="col-sm-3">
-							  			none
+							  			<b>none</b>
 							  		</div>
 							  	</div>
 							</div>
 						</div>
-							
+
 					  	<hr/>
 					  	<center>end results</center>
 				  	</div>
