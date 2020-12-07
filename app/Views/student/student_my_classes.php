@@ -66,9 +66,9 @@
 								</div>
 								<div class="social">
 									<ul>
-										<li class="facebook" style="width:33%;"><a href="#"><span class="fa fa-address-card" title="Tutor Profile"></span></a></li>
-										<li class="twitter" style="width:34%;"><a href="#"><span class="fa fa-history" title="Class History"></span></a></li>
-										<li class="google-plus" style="width:33%;"><a href="#"><span class="fa fa-window-close" title="Cancel Class"></span></a></li>
+										<li class="facebook" style="width:33%;"><a  data-toggle="modal" data-target="#profileModal"href="#"><span class="fa fa-address-card" title="Tutor Profile"></span></a></li>
+										<li class="twitter" style="width:34%;"><a  data-toggle="modal" data-target="#classHistoryModal"href="#"><span class="fa fa-history" title="Class History"></span></a></li>
+										<li class="google-plus" style="width:33%;"><a  data-toggle="modal" data-target="#cancelClassModal" href="#"><span class="fa fa-window-close" title="Cancel Class"></span></a></li>
 									</ul>
 								</div>
 							</li>
@@ -101,8 +101,8 @@
 						  	<div class="card-header">
 						  		<div class="row">
 						  			<div class="col-sm-6">
-						  				<button class="btn btn-primary" title="Tutor Profile">
-						  					<a class="historyProfile" href="/student-tutor-profile">
+						  				<button class="btn btn-primary" title="Tutor Profile"  data-toggle="modal" data-target="#profileModal">
+						  					<a class="historyProfile" href="#">
 						  						<i class="far fa-id-card"></i>
 						  					</a>
 						  				</button>
@@ -158,8 +158,8 @@
 						  	<div class="card-header">
 						  		<div class="row">
 						  			<div class="col-sm-6">
-						  				<button class="btn btn-primary" title="Tutor Profile">
-						  					<a class="historyProfile" href="/student-tutor-profile">
+						  				<button class="btn btn-primary" title="Tutor Profile" data-toggle="modal" data-target="#profileModal">
+						  					<a class="historyProfile" href="#">
 						  						<i class="far fa-id-card"></i>
 						  					</a>
 						  				</button>
@@ -243,6 +243,69 @@
 	  </button>
 	</div>-->
 </div>
+
+<!--profile modal-->
+<div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Profile</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--class history modal-->
+<div class="modal fade" id="classHistoryModal" tabindex="-1" role="dialog" aria-labelledby="classHistoryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Class History</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--class history modal-->
+<div class="modal fade" id="cancelClassModal" tabindex="-1" role="dialog" aria-labelledby="cancelClassModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Cancel Class</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        are you sure you want to cancel this class
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-success">yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <style>
 	.list-group-item.active{
 		z-index: 0;
