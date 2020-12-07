@@ -76,19 +76,133 @@
 
 				  	<!--tutor tab-->
 				  	<div class="tab-pane fade" id="v-pills-tutor" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-				  		<h1>tutor</h1>
+				  		<h1>Show Tutors that you already had a class with.</h1>
 				  	</div>
 				  	<!--tutor tab end-->
 
 				  	<!--history tab -->
 				  	<div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-				  		<h1>history</h1>
+				  		<h4>Show classes you have taken / canceled</h4>
+				  		<!--completed class-->
+				  		<div class="card border">
+						  	<div class="card-header">
+						  		<div class="row">
+						  			<div class="col-sm-6">
+						  				<button class="btn btn-primary" title="Tutor Profile">
+						  					<a class="historyProfile" href="/student-tutor-profile">
+						  						<i class="far fa-id-card"></i>
+						  					</a>
+						  				</button>
+						  				<b>Tutor: Jane Doe</b>
+						  			</div>
+						  			<div class="col-sm-3">
+						  				
+						  			</div>
+						  			<div class="col-sm-3">
+						  				<button class="form-control btn btn-success float-right">Completed<i class="fas fa-check"></i></button>
+						  			</div>
+						  		</div>
+							</div>
+							<div class="card-body">
+							  	<div class="row">
+							  		<div class="col-sm-6">
+							  			<label>Date and time:</label>
+							  		</div>
+							  		<div class="col-sm-3">
+							  			<p>July 21, 2020</p>
+							  		</div>
+							  		<div class="col-sm-3">
+							  			<p>8:00pm to 8:25pm</p>
+							  		</div>
+							  	</div>
+							  	<div class="row">
+							  		<div class="col-sm-6">
+							  			<!--<label>Status:</label>-->
+							  		</div>
+							  		<div class="col-sm-6">
+							  			<p>completed</p>
+							  		</div>
+							  	</div>
+							</div>
+							<div class="card-footer">
+							  	<div class="row">
+							  		<div class="col-sm-6">
+							  			<label>Payment:</label>
+							  		</div>
+							  		<div class="col-sm-3">
+							  			
+							  		</div>
+							  		<div class="col-sm-3">
+							  			55 credits
+							  		</div>
+							  	</div>
+							</div>
+						</div>
+
+						<hr/>
+				  		<!--canceled class-->
+				  		<div class="card border">
+						  	<div class="card-header">
+						  		<div class="row">
+						  			<div class="col-sm-6">
+						  				<button class="btn btn-primary" title="Tutor Profile">
+						  					<a class="historyProfile" href="/student-tutor-profile">
+						  						<i class="far fa-id-card"></i>
+						  					</a>
+						  				</button>
+						  				<b>Tutor: Jane Doe</b>
+						  			</div>
+						  			<div class="col-sm-3">
+						  				
+						  			</div>
+						  			<div class="col-sm-3">
+						  				<button class="form-control btn btn-danger float-right">Canceled<i class="fas fa-phone-slash"></i></button>
+						  			</div>
+						  		</div>
+							</div>
+							<div class="card-body">
+							  	<div class="row">
+							  		<div class="col-sm-6">
+							  			<label>Date and time:</label>
+							  		</div>
+							  		<div class="col-sm-3">
+							  			<p>July 20, 2020</p>
+							  		</div>
+							  		<div class="col-sm-3">
+							  			<p>8:00pm to 8:25pm</p>
+							  		</div>
+							  	</div>
+							  	<div class="row">
+							  		<div class="col-sm-6">
+							  			<!--<label>Status:</label>-->
+							  		</div>
+							  		<div class="col-sm-6">
+							  			<p>Student has canceled the class</p>
+							  		</div>
+							  	</div>
+							</div>
+							<div class="card-footer">
+							  	<div class="row">
+							  		<div class="col-sm-6">
+							  			<label>Payment:</label>
+							  		</div>
+							  		<div class="col-sm-3">
+							  			
+							  		</div>
+							  		<div class="col-sm-3">
+							  			none
+							  		</div>
+							  	</div>
+							</div>
+						</div>
+							
+					  	<hr/>
+					  	<center>end results</center>
 				  	</div>
 				  	<!--history tab end-->
-
 				  	<!--files tab-->
 				  	<div class="tab-pane fade" id="v-pills-files" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-				  		<h1>files</h1>
+				  		<h1>Show files related to your booked classes</h1>
 				  	</div>
 				  	<!--files tab end-->
 				</div>
@@ -309,5 +423,24 @@
 			padding: 10px 0px 9px;
 		}
 	}
+	/* unvisited link */
+a.historyProfile:link {
+  color: white;
+}
+
+/* visited link */
+a.historyProfile:visited {
+  color: white;
+}
+
+/* mouse over link */
+a.historyProfile:hover {
+  color: white;
+}
+
+/* selected link */
+a.historyProfile:active {
+  color: white;
+}
 </style>
 <?= $this->endSection() ?>
