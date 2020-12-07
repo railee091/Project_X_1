@@ -225,7 +225,6 @@
 				  	<div class="tab-pane fade" id="v-pills-schedule-teacher" role="tabpanel" aria-labelledby="v-pills-schedule-teacher-tab">
 				  		<h1>This for tutor view only</h1>
 				  		  <div class="container">
-						    <h1>jQuery Mark Your Calendar Plugin Example</h1>
 						    <div id="picker"></div>
 						    <div>
 						        <p>Selected dates / times:</p>
