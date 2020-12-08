@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 <div class="col-md-3"><!--this right column-->
-	<div class="card">
+	<div class="card border">
 		<article class="card-group-item">
 			<header class="card-header"><h6 class="title">Category </h6></header>
 			<div class="filter-content">
@@ -228,7 +228,7 @@
 						    <div id="picker"></div>
 						    <div>
 						        <p>Selected dates / times:</p>
-						        <div id="selected-dates"></div>
+						        <!--<div id="selected-dates"></div>-->
 						    </div>
 						  </div>
 				  	</div>
@@ -239,6 +239,28 @@
 	</div>
 </div>
 <div class="col-md-3">
+	<div class="card border">
+	  	<div class="card-header">
+	    	System time
+	  	</div>
+	  	<div class="card-body ">
+	   	 	<h5 class="card-title"><span id="systemTime"></span></h5>
+	   	 	<?php
+			echo "Today is " . date("Y-m-d") ." ". date("l") .  "<br>";
+			?>
+			<hr/>
+	    	<p class="card-text">Your computer's sytem time is being used. Please make sure it is correct.</p>
+
+	  	</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				
+		</div>
+	</div>
+	
+
 	<!--<div class="alert alert-warning alert-dismissible fade show" role="alert">
 	  <strong>System Upgrade!</strong> System has been updated to latest version
 	  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -631,5 +653,22 @@ a.historyProfile:active {
             }
           });
         })(jQuery);
+    </script>
+    <script type="text/javascript">//live clock test
+    	var systemTime = document.getElementById('systemTime');
+
+		function time() {
+		  var d = new Date();
+		  var s = d.getSeconds();
+		  var m = d.getMinutes();
+		  var h = d.getHours();
+		  var t = d.getTimezoneOffset();
+
+		  systemTime.textContent = h%12 + ":" + m + ":" + s +"(UTC"+ t +")";
+		}
+
+		setInterval(time, 1000);
+
+
     </script>
 <?= $this->endSection() ?>
