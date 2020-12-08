@@ -227,8 +227,8 @@
 				  		  <div class="container">
 						    <div id="picker"></div>
 						    <div>
-						        <p>Selected dates / times:</p>
-						        <!--<div id="selected-dates"></div>-->
+						        <p>this is just to check Selected dates / times, this will not be included in final stages.</p>
+						        <div id="selected-dates"></div>
 						    </div>
 						  </div>
 				  	</div>
