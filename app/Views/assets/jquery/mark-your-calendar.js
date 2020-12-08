@@ -99,15 +99,17 @@
                 var tmpAvailTimes = ``;
                 $.each(settings.availability[i], function() {
                     tmpAvailTimes += `
-                        <a href="javascript:;" class="myc-available-time" data-time="` + this + `" data-date="` + formatDate(settings.startDate.addDays(i)) + `">
+                    <div class="row">
+                        <a href="javascript:;" class="col-sm myc-available-time" data-time="` + this + `" data-date="` + formatDate(settings.startDate.addDays(i)) + `">
                             ` + this + `
                         </a>
+                    </div>
                     `;
                 });
                 tmp += `
                     <div class="myc-day-time-container" id="myc-day-time-container-` + i + `">
                         ` + tmpAvailTimes + `
-                        <div style="clear:both;"></div>
+                        <div class=""style="clear:both;"></div>
                     </div>
                 `;
             }
@@ -182,7 +184,13 @@
                     <div id="myc-nav-container">` + instance.getNavControl() + `</div>
                     <div id="myc-week-container">
                         <div id="myc-dates-container">` + instance.getDatesHeader() + `</div>
-                        <div id="myc-available-time-container">` + instance.getAvailableTimes() + `</div>
+                        <div id="myc-available-time-container">
+                            <div class="row">
+                                <div class="col-sm-12">`
+                                    + instance.getAvailableTimes() + `
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             `;
