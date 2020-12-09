@@ -63,11 +63,13 @@
 								<div class="info">
 									<h2 class="title">Booked class</h2>
 									<p class="desc">You have a class with Teacher Jane Doe on July 20, 2021 (wednesday) at 8:00pm</p>
+									<!--
 									<ul>
 										<li style="width:33%;">1</li>
 										<li style="width:34%;">2</span></li>
 										<li style="width:33%;"><span class="fa fa-envelope"></span></li>
 									</ul>
+								-->
 								</div>
 								<div class="social">
 									<ul>
