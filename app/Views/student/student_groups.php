@@ -172,14 +172,6 @@
 					  </button>
 					</div>
 				</div>
-				<style>
-.feedImageTutor{
-	border-style: solid;
-	border-color: yellowgreen;
-}
-.feedImageStudent{
-	border-style: solid;
-	border-color: Blue;
-}
+<style>
 </style>
 <?= $this->endSection() ?>

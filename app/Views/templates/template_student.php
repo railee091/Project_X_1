@@ -61,6 +61,12 @@
   position: absolute;
 }
 
+.list-group-item.active{
+  z-index: 0;
+}
+.alert-dismissible .close{
+  z-index:0;
+}
 </style>
 
 	

@@ -14,6 +14,7 @@
 
 					  	<a class="list-group-item nav-link" id="v-pills-tutor-tab" data-toggle="pill" href="#v-pills-tutor" role="tab" aria-controls="v-pills-tutor" aria-selected="false">
 					 	Tutors<span class="float-right badge badge-light round">3</span>  
+
 						</a>
 
 					  	<a class="list-group-item nav-link" id="v-pills-history-tab" data-toggle="pill" href="#v-pills-history" role="tab" aria-controls="v-pills-history" aria-selected="false">
@@ -90,6 +91,56 @@
 				  			<h6><b>For Student</b>: Show Tutors that you already had a class with and statistics.</h6>
 				  			<h6><b>For Tutor</b>: Show Students that you already had a class with and statistics.</h6>
 				  		</div>
+
+
+						<div class="row"><!-- search result (lower) -->
+				            <div class="col-md-12">
+				                <div class="card acik-renk-form">
+				                    <div class="card-body">
+				                        <div class="row">
+										<?php  
+											for ($x = 0; $x <= 2; $x++) {//this just loops the card and images
+												$imageCount = $x;
+										?>
+											<!--profile result box-->
+											<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+											  <div class="card h-100 border border-primary tutor-card">
+												<div class='card-header'>
+												  <img class='card-img-top rounded' src="app/Views/images/filler_images/<?php echo $imageCount;?>.jpg">
+												</div>
+												<div class='card-body'>
+													<div class="row">
+														<div class="col-sm-12">
+														  	<p class='card-title'>
+														  		<a href=''>Fname L.
+														  			<i class="currency-flag currency-flag-usd"></i>
+														  		</a>
+														  	</p>
+														</div>
+													</div>
+													<div class="row tutor-history-font">
+														<div class="col-sm-12 badge">
+														  	Classes together: 6
+														</div>
+														<div class="col-sm-12 badge">
+														  	Classes this month: 3
+														</div>
+													</div>
+												</div>
+												<div class='card-footer text-center bg-primary'>
+												  <button type="button" onclick="location.href='student-tutor-profile'" class='btn btn-primary'>Profile</button>
+												</div>
+											  </div>
+											</div>
+										<?php	
+											} //this just loops the card
+										?>  
+											<!--profile result box-->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>  
 				  	</div>
 				  	<!--tutor tab end-->
 
@@ -554,6 +605,12 @@ a.historyProfile:hover {
 /* selected link */
 a.historyProfile:active {
   color: white;
+}
+.tutor-card{
+	margin: .05rem;
+}
+.tutor-history-font{
+	font-size: 10pt;
 }
 </style>
 <link rel="stylesheet" type="text/css" href="app/views/assets/mark-your-calendar.css">

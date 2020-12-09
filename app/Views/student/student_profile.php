@@ -8,7 +8,7 @@
           <div class="container flex-grow-1 container-p-y">
 
             <!-- Header -->
-            <div class="container-m-nx container-m-ny theme-bg-white mb-4">
+            <div class="border container-m-nx container-m-ny theme-bg-white mb-4">
               <div class="media col-md-10 col-lg-8 col-xl-7 py-5 mx-auto">
                 <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-100 rounded-circle">
                 <div class="media-body ml-5">
@@ -19,13 +19,21 @@
                   </div>
 
                   <a href="javascript:void(0)" class="d-inline-block text-body">
-                    <strong>234</strong>
-                    <span class="text-muted">Classes made</span>
+                    <strong>25</strong>
+                    <span class="text-muted">Classes booked</span>
                   </a>
                   <a href="javascript:void(0)" class="d-inline-block text-body ml-3">
-                    <strong>111</strong>
-                    <span class="text-muted">Students</span>
+                    <strong>3</strong>
+                    <span class="text-muted">Tutors</span>
                   </a>
+                  <div class="h7 text-muted">
+                    <span class="badge badge-secondary">Dancer</span>
+                    <span class="badge badge-secondary">Music Lover</span>
+                    <span class="badge badge-secondary">Dog Lover</span>
+                    <span class="badge badge-secondary">Artist</span>
+                    <span class="badge badge-secondary">Actress</span>
+                    <span class="badge badge-secondary">Singer</span>
+                  </div>
                 </div>
               </div>
               <hr class="m-0">
@@ -33,88 +41,88 @@
             <!-- Header -->
 
             <div class="row">
-              <div class="col">
+              <div class="col ">
 
-                <!-- Info -->
-                <div class="card mb-4">
-					<div class="card-body">
-						<div class="row mb-2">
-						  <div class="col-md-12 text-muted">
-						  	About:<!-- edit only viewable for owner of profile-->
-							<button type="button" class="btn btn-sm btn-success btn-number" data-toggle="modal" data-target="#modalAboutEdit" data-type="plus" data-field="quant[2]">
-                  				<span class="fas fa-edit"></span>
-              				</button>
-						  </div>
+                <!-- about -->
+                <div class="card mb-4 border">
+        					<div class="card-body">
+        						<div class="row mb-2">
+        						  <div class="col-md-12 text-muted">
+        						  	About:<!-- edit only viewable for owner of profile-->
+        							<button type="button" class="btn btn-sm btn-success btn-number" data-toggle="modal" data-target="#modalAboutEdit" data-type="plus" data-field="quant[2]">
+                          				<span class="fas fa-edit"></span>
+                      				</button>
+        						  </div>
 
-							<!-- Modal for Image edit-->
-							<div class="modal fade" id="modalAboutEdit" tabindex="-1" role="dialog" aria-labelledby="Lightbox Gallery by Bootstrap 4" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered" role="document">
-									<div class="modal-content">
-										<div class="modal-body">
-											About Edit
-										</div>
-									</div>
-								</div>
-							</div>
-						  <div class="col-md-12">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-						  </div>
-						</div>
-					</div>
+        							<!-- Modal for Image edit-->
+        							<div class="modal fade" id="modalAboutEdit" tabindex="-1" role="dialog" aria-labelledby="Lightbox Gallery by Bootstrap 4" aria-hidden="true">
+        								<div class="modal-dialog modal-dialog-centered" role="document">
+        									<div class="modal-content">
+        										<div class="modal-body">
+        											About Edit
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        						  <div class="col-md-12">
+        							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        						  </div>
+        						</div>
+        					</div>
                 </div>
-                <!-- / Info -->
+                <!-- / about -->
 
-                <!-- Posts -->
-                <div class="card mb-4">
+                <!-- photos -->
+                <div class="card mb-4 border">
                   <div class="card-body">
-					<div class="row mb-2">
-						<div class="col-md-12 text-muted">
-							Photos:
-							<button type="button" class="btn btn-sm btn-success btn-number" data-toggle="modal" data-target="#modalImageEdit" data-type="plus" data-field="quant[2]">
-                  				<span class="fas fa-edit"></span>
-              				</button>
-						</div>
-						<!--this image thumbnail--->
-						<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modalImage">
-							<a href="#lightbox" data-slide-to="0"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
-						</div>
-						<!--this thumbnail end--->
+          					<div class="row mb-2">
+          						<div class="col-md-12 text-muted">
+          							Photos:
+          							<button type="button" class="btn btn-sm btn-success btn-number" data-toggle="modal" data-target="#modalImageEdit" data-type="plus" data-field="quant[2]">
+                            				<span class="fas fa-edit"></span>
+                        				</button>
+          						</div>
+          						<!--this image thumbnail--->
+          						<div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modalImage">
+          							<a href="#lightbox" data-slide-to="0"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="img-thumbnail my-3"></a>
+          						</div>
+          						<!--this thumbnail end--->
 
-						<!-- Modal for Image thumbnail-->
-						<div class="modal fade" id="modalImage" tabindex="-1" role="dialog" aria-labelledby="Lightbox Gallery by Bootstrap 4" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-body">
-										<div id="lightbox" class="carousel slide" data-ride="carousel" data-interval="5000" data-keyboard="true">
-											<ol class="carousel-indicators">
-												<li data-target="#lightbox" data-slide-to="0"></li>
-												<li data-target="#lightbox" data-slide-to="1"></li>
-											</ol>
-											<div class="carousel-inner">
-												<div class="carousel-item active"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="w-100"
-													 alt=""></div>
-												<div class="carousel-item"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="w-100"
-													 alt=""></div>
-											</div>
-											<a class="carousel-control-prev" href="#lightbox" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
-											<a class="carousel-control-next" href="#lightbox" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+          						<!-- Modal for Image thumbnail-->
+          						<div class="modal fade" id="modalImage" tabindex="-1" role="dialog" aria-labelledby="Lightbox Gallery by Bootstrap 4" aria-hidden="true">
+          							<div class="modal-dialog modal-dialog-centered" role="document">
+          								<div class="modal-content">
+          									<div class="modal-body">
+          										<div id="lightbox" class="carousel slide" data-ride="carousel" data-interval="5000" data-keyboard="true">
+          											<ol class="carousel-indicators">
+          												<li data-target="#lightbox" data-slide-to="0"></li>
+          												<li data-target="#lightbox" data-slide-to="1"></li>
+          											</ol>
+          											<div class="carousel-inner">
+          												<div class="carousel-item active"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="w-100"
+          													 alt=""></div>
+          												<div class="carousel-item"><img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="w-100"
+          													 alt=""></div>
+          											</div>
+          											<a class="carousel-control-prev" href="#lightbox" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+          											<a class="carousel-control-next" href="#lightbox" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+          										</div>
+          									</div>
+          								</div>
+          							</div>
+          						</div>
 
-						<!-- Modal for Image edit-->
-						<div class="modal fade" id="modalImageEdit" tabindex="-1" role="dialog" aria-labelledby="Lightbox Gallery by Bootstrap 4" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-body">
-										Edit
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+          						<!-- Modal for Image edit-->
+          						<div class="modal fade" id="modalImageEdit" tabindex="-1" role="dialog" aria-labelledby="Lightbox Gallery by Bootstrap 4" aria-hidden="true">
+          							<div class="modal-dialog modal-dialog-centered" role="document">
+          								<div class="modal-content">
+          									<div class="modal-body">
+          										Edit
+          									</div>
+          								</div>
+          							</div>
+          						</div>
+          					</div>
                   </div><!--
                   <div class="card-footer">
                     <a href="javascript:void(0)" class="d-inline-block text-muted">
@@ -131,62 +139,62 @@
                     </a>
                   </div>-->
                 </div>
-                <div class="card mb-4">
+                <div class="card mb-4 border">
                   <div class="card-body">
-					<div class="row mb-2">
-						<div class="col-md-12 text-muted">
-							Videos:
-							<button type="button" class="btn btn-sm btn-success btn-number" data-toggle="modal" data-target="#modalVideoEdit" data-type="plus" data-field="quant[2]">
-                  				<span class="fas fa-edit"></span>
-              				</button>
-						</div>
+          					<div class="row mb-2">
+          						<div class="col-md-12 text-muted">
+          							Videos:
+          							<button type="button" class="btn btn-sm btn-success btn-number" data-toggle="modal" data-target="#modalVideoEdit" data-type="plus" data-field="quant[2]">
+                            				<span class="fas fa-edit"></span>
+                        				</button>
+          						</div>
 
-						<!--this video thumbnail--->
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							
-							<a><img class="img-thumbnail my-3 img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-4.jpg" alt="video"
-								data-toggle="modal" data-target="#modalLinkedVideo"></a>
-						</div>
-						<!--this thumbnail end--->
+          						<!--this video thumbnail--->
+          						<div class="col-lg-3 col-md-4 col-sm-6">
+          							
+          							<a><img class="img-thumbnail my-3 img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-4.jpg" alt="video"
+          								data-toggle="modal" data-target="#modalLinkedVideo"></a>
+          						</div>
+          						<!--this thumbnail end--->
 
-						<!-- Modal for Video edit-->
-						<div class="modal fade" id="modalVideoEdit" tabindex="-1" role="dialog" aria-labelledby="Lightbox Gallery by Bootstrap 4" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-body">
-										Video Edit
-									</div>
-								</div>
-							</div>
-						</div>
+          						<!-- Modal for Video edit-->
+          						<div class="modal fade" id="modalVideoEdit" tabindex="-1" role="dialog" aria-labelledby="Lightbox Gallery by Bootstrap 4" aria-hidden="true">
+          							<div class="modal-dialog modal-dialog-centered" role="document">
+          								<div class="modal-content">
+          									<div class="modal-body">
+          										Video Edit
+          									</div>
+          								</div>
+          							</div>
+          						</div>
 
-						<!-- Grid column -->
-						<!-- Modal for Video thumbnail-->
-						<div class="col-lg-4 col-md-12 mb-4">
-							<!--Modal: Name-->
-							<div class="modal fade" id="modalLinkedVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg" role="document">
-								<!--Content-->
-									<div class="modal-content">
-									  <!--Body-->
-										<div class="modal-body mb-0 p-0">
-											<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-											  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GUEZCxBcM78"
-												allowfullscreen></iframe>
-											</div>
-										</div>
-									  <!--Footer-->
-										<div class="modal-footer justify-content-center">
-											<button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								<!--/.Content-->
-								</div>
-							</div>
-							<!--Modal: Name-->
-						</div>
-					  <!-- Grid column -->
-					</div>
+          						<!-- Grid column -->
+          						<!-- Modal for Video thumbnail-->
+          						<div class="col-lg-4 col-md-12 mb-4">
+          							<!--Modal: Name-->
+          							<div class="modal fade" id="modalLinkedVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          								<div class="modal-dialog modal-lg" role="document">
+          								<!--Content-->
+          									<div class="modal-content">
+          									  <!--Body-->
+          										<div class="modal-body mb-0 p-0">
+          											<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+          											  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GUEZCxBcM78"
+          												allowfullscreen></iframe>
+          											</div>
+          										</div>
+          									  <!--Footer-->
+          										<div class="modal-footer justify-content-center">
+          											<button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+          										</div>
+          									</div>
+          								<!--/.Content-->
+          								</div>
+          							</div>
+          							<!--Modal: Name-->
+          						</div>
+          					  <!-- Grid column -->
+          					</div>
                   </div><!--
                   <div class="card-footer">
                     <a href="javascript:void(0)" class="d-inline-block text-muted">
@@ -203,20 +211,20 @@
                     </a>
                   </div>-->
                 </div>
-                <div class="card mb-4">
+                <div class="card mb-4 border">
                   <div class="card-body">
-					<div class="row mb-2">
-						<div class="col-md-12 text-muted">Schedule:</div>
-						<!-- Grid column -->
-						<div class="col-lg-12 col-md-12 mb-4">
-							<div id="picker"></div>
-							<div>
-								<p>Selected dates / times:</p>
-								<div id="selected-dates"></div>
-							</div>
-						</div>
-					  <!-- Grid column -->
-					</div>
+          					<div class="row mb-2">
+          						<div class="col-md-12 text-muted">Schedule:</div>
+          						<!-- Grid column -->
+          						<div class="col-lg-12 col-md-12 mb-4">
+          							<div id="picker"></div>
+          							<div>
+          								<p>Selected dates / times:</p>
+          								<div id="selected-dates"></div>
+          							</div>
+          						</div>
+          					  <!-- Grid column -->
+          					</div>
                   </div><!--
                   <div class="card-footer">
                     <a href="javascript:void(0)" class="d-inline-block text-muted">
@@ -239,14 +247,14 @@
               <div class="col-xl-5">
 
                 <!-- Side info -->
-                <div class="card mb-5">
+                <div class="card mb-5 border">
                   <div class="card-body">
                   	<div class="row mb-2 col-md-12 text-muted">
-							Info:
-							<button type="button" class="btn btn-sm btn-success btn-number" data-toggle="modal" data-target="#modalVideoEdit" data-type="plus" data-field="quant[2]">
-                  				<span class="fas fa-edit"></span>
-              				</button>
-						</div>
+        							Info:
+        							<button type="button" class="btn btn-sm btn-success btn-number" data-toggle="modal" data-target="#modalVideoEdit" data-type="plus" data-field="quant[2]">
+                          				<span class="fas fa-edit"></span>
+                      				</button>
+        						</div>
                     <div class="row mb-2">
                       <div class="col-md-3 text-muted">Birthday:</div>
                       <div class="col-md-9">
