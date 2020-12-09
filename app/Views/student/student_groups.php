@@ -4,7 +4,7 @@
 <div class="col-md-3"><!--this right column-->
 	<div class="card border">
 		<article class="card-group-item">
-			<header class="card-header"><h4 class="title">Groups </h4></header>
+			<header class="card-header"><h4 class="title">Groups</h4></header>
 			<div class="filter-content">
 				<div class="list-group list-group-flush">
 					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -16,7 +16,7 @@
 					 	Discover<!--<span class="float-right badge badge-light round">3</span> -->
 
 						</a>
-						<header class="card-header"><h4 class="title">Groups </h4></header>
+						<header class="card-header"><h4 class="title">Your Groups </h4></header>
 						
 							<?php
 							for($row = 0; $row < 2;$row++){
