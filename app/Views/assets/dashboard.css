@@ -115,3 +115,337 @@
     top: -7px;
   }
 }
+
+/** dashboard elements**/
+
+<style>
+.feedImageTutor{
+  border-style: solid;
+  border-color: yellowgreen;
+}
+.feedImageStudent{
+  border-style: solid;
+  border-color: orange;
+}
+body{
+  overflow-x: hidden;
+}
+#mySidenavTabFloat a {
+  margin-top: 70px;
+  position: fixed; /* Position them relative to the browser window */
+  z-index: 3; /* Position them relative to the browser window */
+  right: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 5px 0px 0px 5px; /* Rounded corners on the top right and bottom right side */
+
+}
+#mySidenavTabFloat a:hover {
+  right: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3; /* Blue */
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336; /* Red */
+  text-align: left
+}
+
+#contact {
+  top: 200px;
+  background-color: #555 /* Light Black */
+}
+img.imagePost{
+  display: block;
+    max-width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+figcaption.figure-caption{
+  display: block;
+    max-width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+a.groupPostLink:link {
+  color: black;
+  text-decoration: underline;
+}
+
+/* visited link */
+a.groupPostLink:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+/* mouse over link */
+a.groupPostLink:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+/* selected link */
+a.groupPostLink:active {
+  color: black;
+  text-decoration: underline;
+}
+.item {
+    position:relative;
+    display:inline-block;
+}
+.notify-badge-tutor{
+    position: absolute;
+    left:.6rem;
+    top:2.3rem;
+    background:yellowgreen;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+    font-size:8px;
+}
+.notify-badge-student{
+    position: absolute;
+    left:.28rem;
+    top:2.3rem;
+    background:orange;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+    font-size:8px;
+}
+/** groups **/
+.list-group-item.active{
+    z-index: 0;
+  }
+    
+    .event-list {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+  .event-list > li {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(51, 51, 51);
+    box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+    padding: 0px;
+    margin: 0px 0px 20px;
+  }
+  .event-list > li > time {
+    display: inline-block;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(197, 44, 102);
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .event-list > li:nth-child(even) > time {
+    background-color: rgb(165, 82, 167);
+  }
+  .event-list > li > time > span {
+    display: none;
+  }
+  .event-list > li > time > .day {
+    display: block;
+    font-size: 56pt;
+    font-weight: 100;
+    line-height: 1;
+  }
+  .event-list > li time > .month {
+    display: block;
+    font-size: 24pt;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .event-list > li > img {
+    width: 100%;
+  }
+  .event-list > li > .info {
+    padding-top: 5px;
+    text-align: center;
+  }
+  .event-list > li > .info > .title {
+    font-size: 17pt;
+    font-weight: 700;
+    margin: 0px;
+  }
+  .event-list > li > .info > .desc {
+    font-size: 13pt;
+    font-weight: 300;
+    margin: 0px;
+  }
+  .event-list > li > .info > ul,
+  .event-list > li > .social > ul {
+    display: table;
+    list-style: none;
+    margin: 10px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .event-list > li > .social > ul {
+    margin: 0px;
+  }
+  .event-list > li > .info > ul > li,
+  .event-list > li > .social > ul > li {
+    display: table-cell;
+    cursor: pointer;
+    color: rgb(30, 30, 30);
+    font-size: 11pt;
+    font-weight: 300;
+        padding: 3px 0px;
+  }
+    .event-list > li > .info > ul > li > a {
+    display: block;
+    width: 100%;
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+  } 
+    .event-list > li > .social > ul > li {    
+        padding: 0px;
+    }
+    .event-list > li > .social > ul > li > a {
+        padding: 3px 0px;
+  } 
+  .event-list > li > .info > ul > li:hover,
+  .event-list > li > .social > ul > li:hover {
+    color: rgb(30, 30, 30);
+    background-color: rgb(200, 200, 200);
+  }
+  .facebook a,
+  .twitter a,
+  .google-plus a {
+    display: block;
+    width: 100%;
+    color: rgb(75, 110, 168) !important;
+  }
+  .twitter a {
+    color: rgb(79, 213, 248) !important;
+  }
+  .google-plus a {
+    color: rgb(221, 75, 57) !important;
+  }
+  .facebook:hover a {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(75, 110, 168) !important;
+  }
+  .twitter:hover a {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(79, 213, 248) !important;
+  }
+  .google-plus:hover a {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(221, 75, 57) !important;
+  }
+
+  @media (min-width: 768px) {
+    .event-list > li {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 120px;
+      padding: 0px;
+    }
+    .event-list > li > time,
+    .event-list > li > img  {
+      display: inline-block;
+    }
+    .event-list > li > time,
+    .event-list > li > img {
+      width: 120px;
+      float: left;
+    }
+    .event-list > li > .info {
+      background-color: rgb(245, 245, 245);
+      overflow: hidden;
+    }
+    .event-list > li > time,
+    .event-list > li > img {
+      width: 120px;
+      height: 120px;
+      padding: 0px;
+      margin: 0px;
+    }
+    .event-list > li > .info {
+      position: relative;
+      height: 120px;
+      text-align: left;
+      padding-right: 40px;
+    } 
+    .event-list > li > .info > .title, 
+    .event-list > li > .info > .desc {
+      padding: 0px 10px;
+    }
+    .event-list > li > .info > ul {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+    }
+    .event-list > li > .social {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      display: block;
+      width: 40px;
+    }
+        .event-list > li > .social > ul {
+            border-left: 1px solid rgb(230, 230, 230);
+        }
+    .event-list > li > .social > ul > li {      
+      display: block;
+            padding: 0px;
+    }
+    .event-list > li > .social > ul > li > a {
+      display: block;
+      width: 40px;
+      padding: 10px 0px 9px;
+    }
+  }
+  /* unvisited link */
+a.historyProfile:link {
+  color: white;
+}
+
+/* visited link */
+a.historyProfile:visited {
+  color: white;
+}
+
+/* mouse over link */
+a.historyProfile:hover {
+  color: white;
+}
+
+/* selected link */
+a.historyProfile:active {
+  color: white;
+}
+.tutor-card{
+  margin: .05rem;
+}
+.tutor-history-font{
+  font-size: 10pt;
+}
+.groupImageThumbnail{
+  width: 20%;
+  margin:0px;
+  padding: 0px;
+}
+</style>
