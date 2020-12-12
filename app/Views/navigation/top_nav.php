@@ -346,9 +346,10 @@
     </div>
   </div>
 </div>
+
 <!-- Modal notification -->
 <div class="modal fade" id="notificationModal" tabindex="-1" role="dialog" aria-labelledby="notificationModal" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle">Notifications<h5>
@@ -357,11 +358,26 @@
         </button>
       </div>
       <div class="modal-body">
-        ...
+	        <div class="card border">
+			  	<div class="card-header">
+			    	<a href="/student-classes">your class has been booked </a><?php echo date("y-m-d");?>
+			  	</div>
+			  	<!--<div class="card-body">
+			      
+			  	</div>-->
+			</div>
+	        <div class="card border">
+			  	<div class="card-header">
+			    	<a href="/student-classes">your class has been canceled</a> </a><?php echo date("y-m-d");?>
+			  	</div>
+			  	<!--<div class="card-body">
+			      
+			  	</div>-->
+			</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
       </div>
     </div>
   </div>

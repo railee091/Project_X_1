@@ -8,7 +8,7 @@
 
 	<a href="student-profile"><i class="material-icons">spa</i><span class="icon-text"></span>My Profile</a></span>
 	<a href="student-find-tutor"><span><i class="material-icons">info</i><span class="icon-text">Find Tutor</span></a>
-	<a href="student-classes"><i class="material-icons">book_online</i><span class="icon-text"></span>My Classes</span></a><br>
+	<a href="student-classes"><i class="material-icons">book_online</i><span class="icon-text"></span>Classes</span></a><br>
 	<a href="student-groups"><i class="material-icons">card_membership</i><span class="icon-text"></span>Groups<span></a>
 	<!--<a href="student-account"><i class="material-icons">monetization_on</i><span class="icon-text"></span>Account</span></a><br>-->
 	<a href="student-files"><i class="material-icons">source</i><span class="icon-text"></span>Library<span></a>
