@@ -23,30 +23,52 @@
         </div>
 	</div>
 	<div class="row">
-		<div class="col-sm-12">
-			<div class="row">
-				<?php
+		<div class="col-sm-3">
+			
+		</div>
+		<div class="col-sm-6">
+			<table style="width:100%">
+			  	<tr>
+			    	<th>Filetype</th>
+			    	<th>Filename</th>
+			    	<th>Options</th>
+			  	</tr>
+			  	<?php
 				$files=scandir('app/views/files');
 				foreach($files as $file)
 				{
 				    if($file=='.'||$file=='..') continue;
 				?>
-				<div class="col-sm-2">
-					<a target="_blank" href="app/views/files/<?php echo $file;?>">
-					<div class="bordercard">
-					  	<div class="card-body">
-					  		<i  alt="Card image cap" class="card-img-top fas fa-file-pdf fa-10x"></i>
-					    	<p style="font-size: 10pt;" class="card-title"><?php echo $file; ?></p>
-					  	</div>
-					</div>
-				</a>
-				</div>
-				
-				<?php
+			  	<tr>
+			    	<td>
+			    		<div class="col-sm-2">
+							<a target="_blank" href="app/views/files/<?php echo $file;?>">
+								<div class="bordercard">
+								  	<div class="card-body">
+								  		<i  alt="Card image cap" class="card-img-top fas fa-file-pdf fa-2x"></i>
+								  	</div>
+								</div>
+							</a>
+						</div>
+			    	</td>
+			    	<td>
+			    		<p style="font-size: 10pt;" class="card-title"><?php echo $file; ?></p>
+			    	</td>
+			    	<td>
+				    	<a target="_blank" href="app/views/files/<?php echo $file;?>">	
+				    		<button class="btn btn-primary  form-control">
+				    			<p style="font-size: 10pt;" class="card-title">OPEN</p>
+				    		</button>
+				    	</a>
+			    	</td>
+			  	</tr>
+			    <?php
 				}
 				?>
-				
-			</div>
+			</table>
+		</div>
+		<div class="col-sm-3">
+			
 		</div>
 	</div>
 </div>
