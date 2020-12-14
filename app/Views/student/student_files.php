@@ -1,32 +1,49 @@
 <?= $this->extend('templates/template_student') ?>
 
 <?= $this->section('content') ?>
-<div class="container-fluid">
+<div class="container">
 	<div class="row">
-		<div class="col-sm-12">
-            <form class="card card-sm">
-                <div class="card-body row no-gutters align-items-center">
-                    <div class="col-auto">
-                       
+		
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt" placeholder="Search Term">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                           <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                <option>--</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                <option>--</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0 form">
+                            <button type="button" class="form-control btn btn-danger wrn-btn">Search</button>
+                        </div>
                     </div>
-                    <!--end of col-->
-                    <div class="col">
-                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search library">
-                    </div>
-                    <!--end of col-->
-                    <div class="col-auto">
-                        <button class="btn btn-lg btn-success" type="submit"><i class="fas fa-search h4 text-body"></i></button>
-                    </div>
-                    <!--end of col-->
                 </div>
-            </form>
-        </div>
+            </div>
+    </div>
+		
 	</div>
 	<div class="row">
-		<div class="col-sm-3">
-			
-		</div>
-		<div class="col-sm-6">
+		<div class="col-sm-12" >
 			<table style="width:100%">
 			  	<tr>
 			    	<th>Filetype</th>
@@ -67,9 +84,45 @@
 				?>
 			</table>
 		</div>
-		<div class="col-sm-3">
-			
-		</div>
 	</div>
 </div>
+<style type="text/css">
+/*search box css start here*/
+.search-sec{
+    padding: 2rem;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+@media (min-width: 992px){
+    .search-sec{
+        position: relative;
+        top: -114px;
+        background: rgba(26, 70, 104, 0.51);
+    }
+}
+
+@media (max-width: 992px){
+    .search-sec{
+        background: #1A4668;
+    }
+}
+</style>
 <?= $this->endSection() ?>			               

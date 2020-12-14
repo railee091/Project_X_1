@@ -26,17 +26,17 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- Sidebar Holder -->
-        
-			<?php require "app/views/navigation/sidebar_student.php"; ?>
-        <!-- Page Content Holder -->
-        <div id="main">
-			<div class="row">
-			<?php require "app/views/navigation/top_nav.php"; ?>
-            </div>
+  <div class="wrapper">
+  <!-- Sidebar Holder -->
+  
+  <?php require "app/views/navigation/sidebar_student.php"; ?>
+  <!-- Page Content Holder -->
+    <div id="main">
+      <div class="row">
+        <?php require "app/views/navigation/top_nav.php"; ?>
+      </div>
 			
-			<div class="row">
+		  <div class="row">
 
 <!-- PHP URI -->
 
@@ -45,9 +45,9 @@
 
 
 
-			</div>
-        </div>
+		  </div>
     </div>
+  </div>
 </body>
 <style>
 .column-bgl{
