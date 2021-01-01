@@ -31,19 +31,32 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->add('login', 'Home::loginDetails');
-$routes->add('register', 'Home::registryDetails');
 
-$routes->get('student', 'Home::studentDashboard');
-$routes->get('tutor', 'Home::tutorDashboard');
+$routes->group('student', function($routes){
+	$routes->add('studentDash', 'Student/StudentController::index');
+});
 
-$routes->get('student-profile', 'Home::studentProfile');
-$routes->get('student-find-tutor', 'Home::studentFindTutor');
-$routes->get('student-classes', 'Home::studentClasses');
-$routes->get('student-groups', 'Home::studentGroups');
-$routes->get('student-account', 'Home::studentAccount');
-$routes->get('student-files', 'Home::studentFiles');
-$routes->get('student-tutor-profile', 'Home::studentTutorProfile');
+
+$routes->group('login', function($routes){
+	$routes->post('checkLogin', 'UserController::checkLogin');
+});
+
+$routes->group('signup', function($routes){
+	$routes->post('signMeUp', 'UserController::signMeUp');
+});
+// $routes->add('login', 'Home::loginDetails');
+// $routes->add('register', 'Home::registryDetails');
+
+// $routes->get('student', 'Home::studentDashboard');
+// $routes->get('tutor', 'Home::tutorDashboard');
+
+// $routes->get('student-profile', 'Home::studentProfile');
+// $routes->get('student-find-tutor', 'Home::studentFindTutor');
+// $routes->get('student-classes', 'Home::studentClasses');
+// $routes->get('student-groups', 'Home::studentGroups');
+// $routes->get('student-account', 'Home::studentAccount');
+// $routes->get('student-files', 'Home::studentFiles');
+// $routes->get('student-tutor-profile', 'Home::studentTutorProfile');
 
 /**
  * --------------------------------------------------------------------

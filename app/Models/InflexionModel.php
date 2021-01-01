@@ -11,15 +11,42 @@ class InflexionModel{
     $this->db =& $db;
   }
 
+  public function CheckLogin($details){
+      $login = $this->db->table('users')->where('user_username =', $details['user_username'])->get()->getResult();
+      $pass = "";
+      $access = "";
+      if($login){
+        foreach($login as $lg){
+          $pass = $lg->user_password;
+          $access = $lg->user_type;
+        }
+  
+        $isValid = password_verify($details['user_password'],$pass);
+        if($isValid){
+          return "Successfully logged in! ".$access;
+        }else{
+          return "Incorrect Username/Password";
+        }
+      }else{
+          return "Username does not exist";
+      }
 
-  //LOGIN FUNCTION
-  public function loginFinder($loginDetails){
-    
+      
   }
 
-  public function registerAccount($registryDetails){
-    $register = $this->db->table("members")
-                            ->insert($registryDetails);
-    return $register;
+  public function signUser($details){
+
+  $checkUser = $this->db->table('users')->where('user_username =', $details['user_username'])->get()->getResult();
+  
+  if($checkUser){
+    return 0;
+  }else{
+    $status = $this->db->table('users')
+    ->insert($details);
+    return 1;
+  }
+
+
+  
   }
 }

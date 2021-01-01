@@ -12,7 +12,7 @@
 				<div class="wrapper fadeInDown">
 				  <div id="formContent">
 					<!-- Login Form -->
-					<form action="register" method="POST">
+					<form action="signup/signMeUp" method="POST">
 					  <input type="text" id="signUpFirstName" class="splashInput fadeIn second" name="signUpFirstName" placeholder="First Name">	
 					  <input type="text" id="signUpLastName" class="splashInput fadeIn first" name="signUpLastName" placeholder="Last Name">
 					  <input type="email" id="signUpEmail" class="splashInput fadeIn first" name="signUpEmail" placeholder="Email">
@@ -21,10 +21,10 @@
 					  <input type="contact" id="signUpContact" class="splashInput fadeIn first" name="signUpContact" placeholder="Contact Number">
 					  <input type="password" id="signUpPassword" class="splashInput fadeIn third" name="signUpPassword" placeholder="password">
 					  <div class="form-group">
-						<label for="exampleFormControlSelect1">register as:</label>
-						<select class="form-control" id="exampleFormControlSelect1">
-						  <option>Student</option>
-						  <option>Tutor</option>
+						<label for="exampleFormControlSelect1">Register as:</label>
+						<select class="form-control" id="exampleFormControlSelect1" name="type">
+						  <option value="Student">Student</option>
+						  <option value="Tutor">Tutor</option>
 						</select>
 					  </div>
 					  <input type="submit" class="fadeIn fourth" value="Sign-up">
