@@ -44,19 +44,19 @@ $routes->group('login', function($routes){
 $routes->group('signup', function($routes){
 	$routes->post('signMeUp', 'UserController::signMeUp');
 });
-// $routes->add('login', 'Home::loginDetails');
-// $routes->add('register', 'Home::registryDetails');
+$routes->add('login', 'Home::loginDetails');
+$routes->add('register', 'Home::registryDetails');
 
-// $routes->get('student', 'Home::studentDashboard');
-// $routes->get('tutor', 'Home::tutorDashboard');
+$routes->get('student', 'Home::studentDashboard');
+$routes->get('tutor', 'Home::tutorDashboard');
 
-// $routes->get('student-profile', 'Home::studentProfile');
-// $routes->get('student-find-tutor', 'Home::studentFindTutor');
-// $routes->get('student-classes', 'Home::studentClasses');
-// $routes->get('student-groups', 'Home::studentGroups');
-// $routes->get('student-account', 'Home::studentAccount');
-// $routes->get('student-files', 'Home::studentFiles');
-// $routes->get('student-tutor-profile', 'Home::studentTutorProfile');
+$routes->get('student-profile', 'Home::studentProfile');
+$routes->get('student-find-tutor', 'Home::studentFindTutor');
+$routes->get('student-classes', 'Home::studentClasses');
+$routes->get('student-groups', 'Home::studentGroups');
+$routes->get('student-account', 'Home::studentAccount');
+$routes->get('student-files', 'Home::studentFiles');
+$routes->get('student-tutor-profile', 'Home::studentTutorProfile');
 
 /**
  * --------------------------------------------------------------------
